@@ -355,7 +355,38 @@ a{
 	background: #448ef6;
 	margin: 0 auto;
 }
-
+ .service-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+	 .learn-more-btn {
+     background: #448ef6;
+      color: #ffffff;
+      border-radius: 9999px;
+      padding: 0.4rem 1rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+	 .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 0.5rem;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    p, ul, li {
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .table-content {
+      font-family: 'Inter', sans-serif;
+    }
 .heading-section-white{
 	color: rgba(255,255,255,.8);
 }
@@ -529,8 +560,8 @@ a{
 	          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="padding: 0;margin:0 ; position: relative">
 				<tr>
                     <td style="padding: 0 0px;">   
-					  <div class="text" style=" text-align: center; color: aliceblue;  ;">
-						<h2 style="margin-top: 30px; font-size: 40px;">Testing Solutions</h2>
+					  <div class="text" style=" text-align: center; color: rgb(255, 255, 255);  ;">
+						<h2 style="margin-top: 30px; font-size: 45px;">Testing Solutions</h2>
 						<p style="margin-top: 8px; line-height: 1.8;text-align: center;">
 						Secure Your Software with Confidence.Start ensuring <br/>your future today with tailored testing strategies that grow with you. <br/>From QA to performance, we make the path to quality clear and simple.
 						</p>
@@ -546,7 +577,9 @@ a{
 			     <tr>
               <td valign="middle">
                 			
-			<img src="https://techcryptors.services/wp-content/uploads/2023/11/Untitled-design-51-scaled.jpg.webp" style="background-size: cover; height: 45vh;;position: absolute; bottom:-10px; left: 30%; border-radius: 25px;"/>	
+			<img src="https://techcryptors.services/wp-content/uploads/2023/11/Untitled-design-51-scaled.jpg.webp" style="background-size: cover; height: 45vh;;position: absolute; bottom:-10px; left: 30%; border-radius: 25px;"/>
+			<div style=" text-align: center; position: absolute; top: 338px; left:520px;" >
+							<h1 style="font-size: 50px; color: transparent;-webkit-text-stroke: #ffffff; -webkit-text-stroke-width: 0.6px; font-family: sans-serif;">Tech Cryptors</h1></div>	
 
 			  </td>
         </tr>
@@ -563,11 +596,21 @@ a{
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                  <tr>
 	                  <td >
-						 <div class="card">
-          <i class="fas fa-desktop"></i>
-          <h3>Desktop Application</h3>
-          <p>Cross-platform desktop apps using Electron, .NET, and more — powerful, secure, and scalable.</p>
-        </div>
+						 <div class="service-card">
+              <div class="flex item-center mb-4">
+                <img src="https://img.icons8.com/?size=100&id=10498&format=png&color=448ef6" alt="Security Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Security Testing</h3>
+                  <p class="text-sm text-gray-600">Fortifies against vulnerabilities</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Detects security flaws</li>
+                <li>Enhances protection</li>
+                <li>Meets compliance</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
 					  </td>
 	                  </tr>
 	                </table>
@@ -575,11 +618,21 @@ a{
 	              <td valign="top" width="50%" style="padding: 20px; ;">
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                  <tr>
-	                  <div class="card">
-          <i class="fab fa-apple"></i>
-          <h3>iOS App Development</h3>
-          <p>Build native iOS applications tailored for performance and elegance using Swift & Xcode.</p>
-        </div>
+	                   <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/?size=100&id=9343&format=png&color=448ef6" alt="Performance Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-xl font-semibold text-gray-800">Performance Testing</h3>
+                  <p class="text-sm text-gray-600">Optimizes speed</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Measures system efficiency</li>
+                <li>Identifies bottlenecks</li>
+                <li>Enhances user experience</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
 	                  </tr>
 	                </table>
 	              </td>
@@ -588,21 +641,50 @@ a{
 	              <td valign="top" width="50%" style="padding: 20px; ;">
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                  <tr>
-	                   <div class="card">
-          <i class="fas fa-tv"></i>
-          <h3>Android TV App Development</h3>
-          <p>Smart TV apps built for immersive experiences and seamless device integration.</p>
-        </div>
+	                  
+  <div class="service-card">
+	<div class="flex items-start mb-4">
+  <img src="https://img.icons8.com/?size=100&id=8576&format=png&color=448efc" alt="Mobile App Testing Icon" class="icon">
+  <div>
+    <h3 class="text-xl font-semibold text-gray-800">Web, App & Software Testing</h3>
+    <p class="text-sm text-gray-600">
+      Reliable testing across all devices.
+    </p>
+  </div>
+</div>
+<ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+  <li>Device & browser compatibility</li>
+  <li>OS-specific checks</li>
+  <li>Network performance</li>
+</ul>
+<a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+
+  </div>
+
 	                  </tr>
 	                </table>
 	              </td>
 	              <td valign="top" width="50%" style="padding:20px;">
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                  <tr>
-	                    <div class="card">
-          <i class="fab fa-android"></i>
-          <h3>Android Mobile App Development</h3>
-          <p>Robust Android apps developed for compatibility across all Android devices and versions.</p>
+	                    <div class="service-card">
+         <div class="flex items-start mb-4">
+  <img src="https://img.icons8.com/?size=100&id=8303&format=png&color=448efc" alt="End-to-End Testing Icon" class="icon">
+  <div>
+    <h3 class="text-xl font-semibold text-gray-800">End-to-End Testing</h3>
+    <p class="text-sm text-gray-600 pt-2">
+      Validate full workflows from start to finish for flawless user journeys.
+    </p>
+  </div>
+</div>
+<ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+  <li>Test real-world scenarios</li>
+  <li>Verify system integrations</li>
+  <li>Catch flow-breaking issues</li>
+ 
+</ul>
+<a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+
         </div>
 	                  </tr>
 	                </table>
@@ -612,22 +694,46 @@ a{
 	              <td valign="top" width="50%" style="padding: 20px; ;">
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                  <tr>
-	                  <div class="card">
-          <i class="fas fa-globe"></i>
-          <h3>Web Application Development</h3>
-          <p>Robust web apps built using React, Angular, and scalable solutions for seamless digital performance.</p>
-        </div>
+   
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/?size=100&id=21896&format=png&color=000000" alt="API Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">API Testing</h3>
+                  <p class="text-sm text-gray-600">Guarantees backend reliability</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Validates API endpoints</li>
+                <li>Ensures data integrity</li>
+                <li>Supports integration</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
 	                  </tr>
 	                </table>
 	              </td>
 	              <td valign="top" width="50%" style="padding:20px;">
 	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
 	                  <tr>
-	                 <div class="card">
-  <i class="fas fa-mobile-alt"></i>
-  <h3>Cross-Platform App Development</h3>
-  <p>Build consistent iOS and Android apps with Flutter or React Native for faster time performance.</p>
+	               <div class="service-card">
+					 <div class="flex items-start mb-4">
+  <img src="https://img.icons8.com/?size=100&id=8322&format=png&color=448efd" alt="ERP CRM Testing Icon" class="icon">
+  <div>
+    <h3 class="text-lg font-medium text-gray-800">ERP & CRM Testing</h3>
+    <p class="text-sm text-gray-600">
+     Ensure smooth business workflows.
+    </p>
+  </div>
 </div>
+<ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+  <li>Functional validation of key modules</li>
+  <li>Data accuracy and migration checks</li>
+  <li>Third-party system integration testing</li>
+</ul>
+<a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+				   </div>
+
 	                  </tr>
 	                </table>
 	              </td>
