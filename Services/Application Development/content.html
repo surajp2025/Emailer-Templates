@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Application Development | Tech Cryptors</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    .container {
+      max-width: 1300px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .section-title h2 {
+      font-size: 2.5rem;
+      color: #111827;
+      font-weight: 800;
+    }
+
+    .section-title p {
+      font-size: 1.1rem;
+      color: #6b7280;
+      margin-top: 0.5rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: all 0.3s ease;
+      border: 1px solid #e5e7eb;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(59, 130, 246, 0.1);
+    }
+
+    .card i {
+      font-size: 2rem;
+      color: #3b82f6;
+      margin-bottom: 1rem;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    .card p {
+      color: #4b5563;
+      font-size: 0.95rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin-top: 3rem;
+    }
+
+    .cta a {
+      background: linear-gradient(to right, #3b82f6, #2563eb);
+      padding: 0.75rem 2rem;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      font-size: 1rem;
+      box-shadow: 0 4px 20px rgba(59, 130, 246, 0.3);
+      transition: 0.3s ease;
+    }
+
+    .cta a:hover {
+      background: #1d4ed8;
+    }
+
+    .process,
+    .why-choose {
+      background-color: #f0f9ff;
+      padding: 4rem 2rem;
+      margin-top: 4rem;
+    }
+
+    .process-steps,
+    .why-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .step, .why {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      width: 280px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      text-align: center;
+    }
+
+    .step i, .why i {
+      font-size: 1.8rem;
+      color: #2563eb;
+      margin-bottom: 0.5rem;
+    }
+
+    .step h4, .why h4 {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 600px) {
+      .section-title h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Services Section -->
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Application Development Services</h2>
+        <p>End-to-end application development services for all platforms and industries.</p>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <i class="fas fa-desktop"></i>
+          <h3>Desktop Application Service</h3>
+          <p>Cross-platform desktop apps using Electron, .NET, and more — powerful, secure, and scalable.</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-apple"></i>
+          <h3>iOS App Development</h3>
+          <p>Build native iOS applications tailored for performance and elegance using Swift & Xcode.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tv"></i>
+          <h3>Android TV App Development</h3>
+          <p>Smart TV apps built for immersive experiences and seamless device integration.</p>
+        </div>
+        <div class="card">
+          <i class="fab fa-android"></i>
+          <h3>Android Mobile App Development</h3>
+          <p>Robust Android apps developed for compatibility across all Android devices and versions.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-cloud"></i>
+          <h3>Cloud App Development</h3>
+          <p>Deploy apps on AWS, Azure, or GCP — leveraging microservices and DevOps pipelines.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-link"></i>
+          <h3>API Integration Services</h3>
+          <p>Enable third-party integrations and internal API development for seamless workflows.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-lock"></i>
+          <h3>Secure Application Architecture</h3>
+          <p>End-to-end encrypted, role-based access, audit trails, and threat prevention.</p>
+        </div>
+        <div class="card">
+          <i class="fas fa-tools"></i>
+          <h3>Application Maintenance</h3>
+          <p>We ensure your apps stay up-to-date, fast, and bug-free with continuous support.</p>
+        </div>
+      </div>
+
+      <div class="cta">
+        <a href="#contact">Start Your Project with Tech Cryptors</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="process">
+    <div class="container">
+      <div class="section-title">
+        <h2>Our Process</h2>
+        <p>From idea to launch — a transparent and agile-driven development process.</p>
+      </div>
+      <div class="process-steps">
+        <div class="step">
+          <i class="fas fa-lightbulb"></i>
+          <h4>1. Ideation</h4>
+          <p>We brainstorm and define the solution with your input at every step.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-pencil-ruler"></i>
+          <h4>2. Design</h4>
+          <p>UI/UX wireframes, prototypes, and mockups aligned with your brand.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-code"></i>
+          <h4>3. Development</h4>
+          <p>Agile sprints with regular demos and real-time collaboration.</p>
+        </div>
+        <div class="step">
+          <i class="fas fa-rocket"></i>
+          <h4>4. Deployment</h4>
+          <p>Seamless CI/CD pipelines and cloud hosting with zero downtime.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="why-choose">
+    <div class="container">
+      <div class="section-title">
+        <h2>Why Choose Tech Cryptors?</h2>
+        <p>Trusted by startups and enterprises globally for delivering reliable solutions.</p>
+      </div>
+      <div class="why-list">
+        <div class="why">
+          <i class="fas fa-user-shield"></i>
+          <h4>Experienced Developers</h4>
+          <p>Our engineers bring 10+ years of experience across industries.</p>
+        </div>
+        <div class="why">
+          <i class="fas fa-headset"></i>
+          <h4>Dedicated Support</h4>
+          <p>24/7 communication channels and fast resolution times.</p>
+        </div>
+        <div class="why">
+          <i class="fas fa-thumbs-up"></i>
+          <h4>Proven Results</h4>
+          <p>Apps we've built have scaled to millions of users globally.</p>
+        </div>
+        <div class="why">
+          <i class="fas fa-chart-bar"></i>
+          <h4>Data-Driven Development</h4>
+          <p>Every decision we make is backed by research and data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

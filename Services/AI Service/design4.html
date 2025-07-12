@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TechCryptors AlaaS Newsletter</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f7fb;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+    header {
+      background: linear-gradient(to right, #0a2540, #1c4d79);
+      color: #fff;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 36px;
+      animation: slideIn 1s ease-out;
+    }
+    header p {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.9;
+    }
+    .section {
+      padding: 30px 40px;
+      background-color: #f8fafc;
+    }
+    .section h2 {
+      color: #0a2540;
+      margin-top: 0;
+      animation: slideIn 1s ease-out;
+    }
+    .section p {
+      line-height: 1.6;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .service-card {
+      background: #e0f7fa;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+      animation: slideUp 1s ease-in-out;
+    }
+    .service-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 6px;
+      margin-bottom: 12px;
+    }
+    .service-card h4 {
+      margin: 0 0 10px;
+      color: #00796b;
+    }
+    .highlight {
+      background: #ffecb3;
+      padding: 20px;
+      border-left: 4px solid #fbc02d;
+      margin: 20px 0;
+      font-style: italic;
+      animation: fadeIn 1s ease-in-out;
+    }
+    .faq {
+      margin-top: 10px;
+    }
+    .faq h4 {
+      margin-bottom: 5px;
+    }
+    .faq p {
+      margin-top: 0;
+      font-size: 14px;
+    }
+    .cta {
+      text-align: center;
+      padding: 30px;
+      background-color: #0288d1;
+    }
+    .cta a {
+      background: #00796b;
+      color: #fff;
+      padding: 15px 30px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 0 10px;
+      transition: background 0.3s ease;
+    }
+    .cta a:hover {
+      background: #004d40;
+    }
+    .contact {
+      background: #f1f4fa;
+      padding: 30px 40px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #0a2540;
+      color: #ccc;
+      font-size: 14px;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from {opacity: 0; transform: scale(0.98);}
+      to {opacity: 1; transform: scale(1);}
+    }
+    @keyframes slideUp {
+      from {transform: translateY(20px); opacity: 0;}
+      to {transform: translateY(0); opacity: 1;}
+    }
+    @keyframes slideIn {
+      from {transform: translateX(-30px); opacity: 0;}
+      to {transform: translateX(0); opacity: 1;}
+    }
+
+    /* SVG Icon Animations */
+    .svg-icon {
+      width: 40px;
+      height: 40px;
+      fill: #00796b;
+      margin-bottom: 10px;
+      animation: bounce 1s ease infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-15px); }
+    }
+
+    @media (max-width: 768px) {
+      .services {
+        grid-template-columns: 1fr;
+      }
+      .section {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header>
+    <h1>🔐 TechCryptors AlaaS</h1>
+    <p>Smart. Scalable. Secure — Algorithm as a Service</p>
+  </header>
+
+  <div class="section">
+    <h2>About Tech Cryptors</h2>
+    <p><strong>Tech Cryptors</strong> is a Mumbai-based innovation hub specializing in AI-driven software, intelligent hardware, and custom algorithmic services. We bring together research, engineering, and product development to create scalable solutions for startups, enterprises, and academic institutions.</p>
+  </div>
+
+  <div class="section">
+    <h2>Our Core AlaaS Services</h2>
+    <div class="services">
+
+      <div class="service-card">
+        <img src="https://www.analyticsinsight.net/wp-content/uploads/2021/07/AI-Algorithms.jpg" alt="Algorithm Design">
+        <h4>1. Algorithm Design & Research</h4>
+        <p>We craft intelligent algorithms using AI, ML, optimization & data science to solve complex real-world problems.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://www.salesforceben.com/wp-content/uploads/2023/07/ai-in-crm.jpg" alt="CRM AI">
+        <h4>2. CRM & Web Apps with AI</h4>
+        <p>Smart CRM systems and web apps with embedded AI features: chatbots, automation, analytics & more.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://www.techsmith.com/blog/wp-content/uploads/2022/09/ai-video-analysis.png" alt="Image Video Processing">
+        <h4>3. Image & Video Processing with AI</h4>
+        <p>Facial recognition, object detection, video analysis using OpenCV, TensorFlow and PyTorch models.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://www.iotforall.com/wp-content/uploads/2021/10/AI-IoT-Edge-Computing.jpg" alt="AI IoT Integration">
+        <h4>4. AI with Hardware & IoT</h4>
+        <p>Smart sensors, embedded systems, wearable tech with AI logic running at the edge or in the cloud.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://assets-global.website-files.com/5fbd3c0fdf077b9d63dfe3a6/63e4057f79f2ef3053693033_AI-Content-Generation.jpg" alt="Content Generation">
+        <h4>5. AI-Powered Content Generation</h4>
+        <p>Auto-generate blogs, reports, emails & SEO-optimized text using the latest in NLP and generative AI.</p>
+      </div>
+
+      <div class="service-card">
+        <img src="https://assets.entrepreneur.com/content/3x2/2000/20181128144800-GettyImages-920623462.jpeg" alt="Predictive Analytics">
+        <h4>6. Predictive Analytics & Fraud Detection</h4>
+        <p>Fraud detection, churn prediction, and forecasting via real-time ML models built for your industry.</p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Client Testimonials</h2>
+    <p>"Tech Cryptors delivered exactly what we needed to scale our business. Their predictive analytics and fraud detection were a game changer for us." — <strong>CEO, FinTech Startup</strong></p>
+    <p>"We used Tech Cryptors for our AI-powered CRM. It's transformed our customer interactions, reducing response times by 40%." — <strong>CMO, Retail Enterprise</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>Our Team</h2>
+    <p><strong>John Doe:</strong> CEO, visionary behind our AI-driven solutions</p>
+    <p><strong>Jane Smith:</strong> CTO, leading innovation and R&D</p>
+  </div>
+
+  <div class="cta">
+    <a href="#">🚀 Request a Demo</a>
+    <a href="#">📘 Download Brochure</a>
+  </div>
+
+  <footer>
+    &copy; 2025 TechCryptors. All rights reserved.
+  </footer>
+</div>
+
+</body>
+</html>

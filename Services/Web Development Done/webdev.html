@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting"> 
+	
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7c116ba841.js" crossorigin="anonymous"></script>
+
+	<!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title>Tech Cryptors Private Limited</title> <!-- The 
+	title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+<style>
+	body{
+	margin: 0;
+	background-color: #cccccc;
+	font-family: "DM Sans", sans-serif;
+}
+
+table {
+	border-spacing: 0;
+}
+
+td {
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+
+
+/* What it does: Fixes webkit padding issue. */
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+
+</style>
+
+<!-- CSS Reset : END -->
+
+<!-- Progressive Enhancements : BEGIN -->
+<style>
+
+  .primary{
+	background: #0d0cb5;
+}
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+
+
+/*BUTTON*/
+.btn{
+	padding: 5px 15px;
+	display: inline-block;
+}
+.btn.btn-primary{
+	border-radius: 5px;
+	background: #0d0cb5;
+	color: #ffffff;
+}
+.btn.btn-white{
+	border-radius: 5px;
+	background: #ffffff;
+	color: #000000;
+}
+.btn.btn-white-outline{
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Poppins', sans-serif;
+	color: #000000;
+	margin-top: 0;
+}
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.4);
+}
+
+a{
+	color: #0d0cb5;
+}
+.wrapper {
+	width: 100%;    
+	table-layout: fixed;
+
+}
+
+.main {
+	background-color: #ffffff;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 750px;
+	font-family: sans-serif;
+	color: #171a1b;
+}
+
+
+/*LOGO*/
+
+.logo h1{
+	margin: 0;
+}
+.logo h1 a{
+	color: #000000;
+	font-size: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-family: 'Poppins', sans-serif;
+}
+
+.navigation{
+	padding: 0;
+}
+.navigation li{
+	list-style: none;
+	display: inline-block;;
+	margin-left: 5px;
+	font-size: 13px;
+	font-weight: 500;
+}
+.navigation li a{
+	color: rgba(0,0,0,.4);
+}
+
+/*HERO*/
+.hero{
+	position: relative;
+	z-index: 0;
+}
+.hero .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .6;
+}
+
+.hero .icon a{
+	display: block;
+	width: 60px;
+	margin: 0 auto;
+}
+.hero .text{
+	color: rgba(255,255,255,.8);
+}
+.hero .text h2{
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 0;
+}
+
+
+/*HEADING SECTION*/
+
+.heading-section h2{
+	color: #000000;
+	font-size: 20px;
+	margin-top: 0;
+	line-height: 1.4;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #0c85b5;
+	margin: 0 auto;
+}
+
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+
+
+.icon{
+	text-align: center;
+}
+
+
+/*SERVICES*/
+.services{
+	background: rgba(0,0,0,.03);
+}
+.text-services{
+	padding: 10px 10px 0; 
+	height: 250px;
+	text-align: center;
+}
+.text-services h3{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.services-list{
+	padding: 0;
+	margin: 0 0 20px 0;
+	width: 100%;
+	float: left;
+}
+
+.services-list img{
+	float: left;
+}
+.services-list .text{
+	width: calc(100% - 60px);
+	float: right;
+}
+.services-list h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.services-list p{
+	margin: 0;
+}
+
+/*BLOG*/
+.text-services .meta{
+	text-transform: uppercase;
+	font-size: 14px;
+}
+
+/*TESTIMONY*/
+.text-testimony .name{
+	margin: 0;
+}
+.text-testimony .position{
+	color: rgba(0,0,0,.3);
+
+}
+
+
+/*VIDEO*/
+.img{
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+.img .icon{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin-top: -25px;
+}
+.img .icon a{
+	display: block;
+	width: 60px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -25px;
+}
+
+
+
+/*COUNTER*/
+.counter{
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+.counter .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .3;
+}
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+#092AAB
+
+
+/*FOOTER*/
+.three-columns {
+	text-align: center;
+	font-size: 0;
+	padding: 2px 0 2px;
+
+}
+
+.three-columns .column {
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+
+}
+
+
+
+.three-columns .content {
+	font-size: 15px;
+	line-height: 20px;
+}
+
+
+
+
+.three-columns-1 {
+	text-align: center;
+	font-size: 0;
+	
+	position: fixed;
+	   left:12px;
+}
+
+.three-columns-1 .column-1 {
+
+	display: inline-block;
+   
+   
+
+}
+
+
+
+
+
+.three-columns-1 .content-1 a {
+	text-decoration: none;
+}
+
+.three-columns-1 .content-1 p {
+	text-align: center;
+	color: white;
+	font-weight: 500;
+}
+
+.hover {
+	margin: 0px 8px;
+	padding: 0px 6px;
+	border-radius: 50%;
+	transition: transform 0.3s ease-in-out;
+	opacity: 1;
+}
+
+
+
+.hover-link:hover .hover {
+	transform: translateX(10px);
+	opacity: 0.55;
+}
+
+
+
+</style>
+
+
+</head>
+
+<body>
+	<div class="wrapper">
+   
+    <div class="main">
+    	<!-- BEGIN BODY -->
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="top" class="bg_white" style="padding: 1em 1.5em;">
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td width="700px" class="logo" style="text-align: left;">
+			            <a href="https://techcryptors.services/">
+							<img
+                             src="https://www.techcryptors.com/assets/email_signature/logo06.png" 
+                             alt=""  title="TECH CRYPTORS" height="65px" width="280px"></a>
+			          </td>
+			          <td width="0px" class="logo" style="text-align: right;">
+						<table  style="border: none; width:auto; ">
+							<tr>
+								<td>
+									<a href="https://techcryptors.com/">
+										<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/weblogo.png" alt="" width="18px" height="18px">
+									</a>
+
+								</td>
+								<td>
+									<a href="https://api.whatsapp.com/send/?phone=917900172288&text&type=phone_number&app_absent=0"
+										>
+									   <img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/wa-logo.png" alt="" style="padding-left: 5px;">
+									</a>
+
+								</td>
+
+								<td>
+									<a href="https://www.instagram.com/techcryptorsit/"
+										>
+										<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/insta.png" alt="">
+									</a>
+
+								</td>
+
+								<td>
+									<a href="https://www.facebook.com/TechCryptors/"
+										>
+										<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/facebook.png" alt="">
+									</a>
+
+								</td>
+
+								<td>
+									<a href="https://in.linkedin.com/company/tech-cryptors"
+										>
+										<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/linkedin-logo.png" alt="">
+									</a>
+
+								</td>
+								<td>
+									<a href="https://x.com/techcryptors"
+									   >
+									 <img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/twitter-logo.png" alt="">
+									</a>
+
+								</td>
+								<td>
+									<a href="https://www.youtube.com/channel/UCam7cscqE1raC09JTYz-zbg"
+										>
+										<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/yt-logo.png" alt="">
+									</a>
+
+								</td>
+								<td>
+									<a href="https://www.google.com/search?q=tech+cryptors+reviews&rlz=1C1ONGR_enIN1058IN1058&oq=techcryptors+reviews&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgNGIAEMg0IAhAAGIYDGIAEGIoFMg0IAxAAGIYDGIAEGIoFMg0IBBAAGIYDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINjg2MmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x3be7b0e690555555:0x5be7a1480ca87d76,3,,,,"
+										>
+										<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/google-logo.png" alt="">
+									</a>
+
+								</td>
+							</tr>
+							<tr>
+								<td class="padding threes" colspan="8">
+									<a href="tel:7900172288"
+									 >
+									  <img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/phone-no-1.png" alt="" width="180px">
+									</a>
+								</td>
+							</tr>
+
+
+						</table>
+			          </td>
+          		</tr>
+          	</table>
+          </td>
+	      </tr><!-- end tr -->
+				<tr>
+          <td valign="middle" class="hero bg_white" style="background-image: url(https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/bg_1.jpg); background-size: cover; height: 400px;">
+          	<div class="overlay"></div>
+            <table>
+            	<tr>
+            		<td>
+            			<div class="text" style="padding: 0 3em; text-align: center;">
+							<h2>Professional Web Development Services</h2>
+							<p>Transform your vision into a stunning, user-friendly website. From modern designs to seamless functionality, we deliver custom solutions tailored to your business needs. Let us help you create a digital presence that stands out.</p>
+							<div class="icon">
+	            				<a href="https://www.techcryptors.services/rt-portfolios/website-development/">
+	                      <img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/002-play-button.png" alt="" style="width: 60px; max-width: 600px; height: auto; margin: auto; display: block;">
+	                    </a>
+	                  </div>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+		     
+			<td class="bg_white">
+		        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+		          <tr>
+		            <td class="bg_white email-section">
+		            	<div class="heading-section" style="text-align: center; padding: 10px 18px; background-color:rgba(0,0,0,.8);color: #fffcfc;" >
+		              	<h1 style="color: #f3f3f3; font-size: 18px;" class="subheading">Our Services</h1>
+		              	<p style="padding: 0;margin: 0; font-size: 14px;">We create stunning, scalable websites that align with your business goals and deliver a seamless user experience.</p>
+
+		            	</div>
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+		            			
+							<td valign="top" width="33.333%" style="padding-top: 20px;" class="services">
+							  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+								<tr>
+								 
+								</tr>
+								<tr>
+									<td class="text-services">
+									  <h3>Informative Websites</h3>
+									  <p>We create professional business websites that highlight your brand, engage customers, and drive growth.</p>
+									</td>
+								  </tr>
+							  </table>
+							</td>
+							<td valign="top" width="33.333%" style="padding-top: 20px; background: rgba(3, 33, 80, 0.11);" class="services">
+								<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+					  
+								  <tr>
+									<td class="text-services">
+									  <h3>Custom Website Design</h3>
+									  <p>We create stunning, scalable websites that align with your business goals and deliver a seamless user experience.</p>
+									</td>
+								  </tr>
+								</table>
+							  </td>
+							<td valign="top" width="33.333%" style="padding-top: 20px;" class="services">
+							  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+							
+								<tr>
+									<td class="text-services">
+										<h3>E-commerce Solutions</h3>
+										<p>We build secure and scalable e-commerce platforms designed to enhance user experience and drive conversions.</p>
+									  </td>
+								</tr>
+							  </table>
+							</td>
+							
+						  </tr>
+						</table>
+						<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+		            			<td valign="top" width="33.333%" style="padding-top: 20px;background: rgba(3, 33, 80, 0.11);" class="services">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                         
+						  <tr>
+							<td class="text-services">
+							  <h3>Customer Relationship Management (CRM)</h3>
+							  <p>Our CRM solutions help you build strong relationships with your customers by streamlining sales, marketing, and customer service in one platform.</p>
+							</td>
+						  </tr>
+                        </table>
+                      </td>
+							<td valign="top" width="33.333%" style="padding-top: 20px; " class="services">
+							  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+								
+								<tr>
+									<td class="text-services">
+									  <h3>Content Management System (CMS)</h3>
+									  <p>Our CMS solutions make it easy to manage your website content, improve collaboration, and streamline updates without technical expertise.</p>
+									</td>
+								  </tr>
+							  </table>
+							</td>
+							<td valign="top" width="33.333%" style="padding-top: 20px; background: rgba(3, 33, 80, 0.11);" class="services">
+							  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+								
+								<tr>
+								  <td class="text-services">
+									<h3>Enterprise Resource Planning (ERP)</h3>
+									<p>Our ERP systems integrate core business functions, enabling real-time insights and improved decision-making across your organization.</p>
+								  </td>
+								</tr>
+							  </table>
+							</td>
+							
+						  </tr>
+						</table>
+		            </td>
+					
+		          </tr><!-- end: tr -->
+		          <tr>
+		            <td class="bg_light email-section" style="width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+		            			<td valign="middle" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                           
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="50%">
+                        
+                      </td>
+                    </tr>
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+		          
+		            	</table>
+		            </td>
+		          </tr><!-- end: tr -->
+
+		          <tr style="width: 100%;">
+			          <td valign="middle" class="counter" style="background-image: url(https://www.techcryptors.com/wp-content/uploads/emailer/02_Test/blog-2.jpg); background-size: cover; padding: 4em 0;">
+			          	<div class="overlay" ></div>
+			            <table>
+			            	<tr>
+			            		<td valign="middle" width="300px">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #00000075;">
+                          <tr>
+                            <td class="counter-text">
+                            	<span class="num">250+</span>
+                            	<span class="name">Clients</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="250px">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #00000075;">
+                          <tr>
+                            <td class="counter-text">
+                            	<span class="num">604+</span>
+                            	<span class="name">Projects</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="200px">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="background-color: #00000075;">
+                          <tr>
+                            <td class="counter-text">
+                            	<span class="num">9+</span>
+                            	<span class="name">Countries Served</span>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+			            	</tr>
+			            </table>
+			          </td>
+				      </tr><!-- end tr -->
+				     
+		           
+		       
+                        
+                         
+                      
+                 
+		          <tr>
+		            <td class="bg_white email-section" style="width: 100%;">
+		            	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+		            		<tr>
+		            			<td valign="middle" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td>
+                             <p>
+								<a href="https://www.techcryptors.services">
+								<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/services.png" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;"></a>
+							 </p>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="50%">
+                        <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                          <tr>
+                            <td class="text-services" style="text-align: left; padding-left:25px;">
+                            	<div class="heading-section">
+								              	<h2>Our Features</h2>
+								            	</div>
+												<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+															<div class="text">
+								            			<h3> AI-Powered Features</h3>
+                       									<p>Chatbots and smart recommendations.</p>
+								            		</div>
+								            	</div>
+												<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+															<div class="text">
+								            			<h3>Custom Web Applications</h3>
+                       									<p>Tailored solutions for business needs</p>
+								            		</div>
+								            	</div>
+												<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+															<div class="text">
+								            			<h3>E-Commerce Development</h3>
+                       									<p>Secure payment gateways.</p>
+								            		</div>
+								            	</div>
+								            	<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+								            		<div class="text">
+														<h3>Responsive Layout</h3>
+                                                        <p>Optimized for all devices and screens.</p>
+								            		</div>
+								            	</div>
+												
+												<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+															<div class="text">
+								            			<h3>Full-Stack Development</h3>
+                       									<p>Advanced Technologies & Multiple Stacks</p>
+								            		</div>
+								            	</div>
+								            	<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+								            		<div class="text">
+								            			<h3>SEO Friendly</h3>
+  													    <p>Boost visibility on search engines.</p>
+								            		</div>
+								            	</div>
+								            	<div class="services-list">
+								            		<img src="https://www.techcryptors.services/wp-content/uploads/emailer/02_Test/checked.png" alt="" style="width: 50px; max-width: 600px; height: auto; display: block;">
+								            		<div class="text">
+								            			<h3>Scalable</h3>
+                       									<p>Designed to grow with your business.</p>
+								            		</div>
+								            	</div>
+												
+												
+												
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+		            	</table>
+						<td>
+							<tr >
+								<td>
+									<a href="https://techcryptors.services/" style="position:relative "><img
+											src="https://www.techcryptors.services/wp-content/uploads/emailer/01/tcbanner.png" alt="" width="100%"/>
+										  
+			
+									</a>
+									
+								</td>
+								
+							</tr>
+						</td>
+		            </td>
+				  </tr>
+				  </table>
+				  <!-- footer -->
+
+				     <!-- footer -->
+    <table>
+        <tbody>
+            <tr>
+                <td style="margin-bottom: 100px">
+                <table width="750px">
+                    <tbody>
+                        <tr>
+                            <td class="three-columns" style="background: #798fad; width: 750px; text-align: center; padding-bottom: 5px;">
+                            <table class="column" style="border: none; max-width: 700px">
+                                <tbody>
+                                    <tr>
+                                        <td style="text-align: center; max-width: 750px">
+                                        <table class="content">
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding: 10px"><a href="https://techcryptors.services/"><img alt="" src="https://techcryptors.services/wp-content/uploads/emailer/01/logosq.png" title="TECH CRYPTORS LOGO" width="150" /></a></td>
+                                                    <td><img alt="our-services-text" src="https://techcryptors.services/wp-content/uploads/emailer/training/our-services.png" style=" margin-top: 5px; padding-top: 0px; margin-left: 30px;" />
+                                                    <div style="margin: 0px; list-style: none; padding-left: 40px;"><a href="https://techcryptors.services/rt-portfolios/website-development/"><img alt="website-development" src="https://techcryptors.services/wp-content/uploads/emailer/training/web1-dev.png" /></a><br />
+                                                    <a href="https://techcryptors.services/rt-portfolios/application-development/"><img alt="application-development" src="https://techcryptors.services/wp-content/uploads/emailer/training/app1-dev.png" /></a><br />
+                                                    <a href="https://techcryptors.services/rt-portfolios/software-development/"><img alt="software-development" src="https://techcryptors.services/wp-content/uploads/emailer/training/software1-dev.png" /></a>
+                                                    <a href="https://techcryptors.services/rt-portfolios/ai-services-alaas/"><img alt="ai-services" src="https://techcryptors.services/wp-content/uploads/emailer/training/ai3.png" /></a></div>
+                                                    </td>
+                                                    <td><img alt="follow-us-text" src="https://techcryptors.services/wp-content/uploads/emailer/training/followus.png" style="padding: 0px;" />
+                                                    <div style=" list-style: none; padding-left: 21px;margin: 0px; padding-top: 2px;"><a href="https://www.facebook.com/TechCryptors/"><img alt="facebook-logo" src="https://techcryptors.services/wp-content/uploads/emailer/training/fb1.png" /></a><br />
+                                                    <a href="https://www.instagram.com/techcryptorsit/"><img alt="instagram-logo" src="https://techcryptors.services/wp-content/uploads/emailer/training/ig.png" /></a><br />
+                                                    <a href="https://in.linkedin.com/company/tech-cryptors"><img alt="linkedin-logo" src="https://techcryptors.services/wp-content/uploads/emailer/training/ln.png" /></a><br />
+                                                    <a href="https://x.com/techcryptors"><img alt="twitter-logo" src="https://techcryptors.services/wp-content/uploads/emailer/training/tw.png" /></a></div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 700px">
+                                                    <hr style="border-color: #000" /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 720px"><a href="https://techcryptors.services/"><img alt="technologies-we-use" src="https://techcryptors.services/wp-content/uploads/emailer/02_Test/techis.png" width="720px" /></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="width: 700px">
+                                                    <hr style="border-color: #000" /></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+
+                                        <table class="content" style="padding-top: 3px">
+                                            <tbody>
+                                                <tr>
+                                                    <td><img alt="copyright_text" src="https://techcryptors.services/wp-content/uploads/emailer/01/copyright.png" /></td>
+                                                    <td><a href="[unsubscribe]"><img alt="unsubscribe-text" src="https://techcryptors.services/wp-content/uploads/emailer/01/unsubscribe.png" style="padding-left: 350px" /></a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+
+				
+
+
+
+    
+                
+       
+    
+
+    </div>
+</div>
+
+</body>
+</html>

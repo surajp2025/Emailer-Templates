@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tech Cryptors IT Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Inter', sans-serif; background: #f1f5f9; color: #1e293b; }
+
+    /* Header */
+    header {
+      background: linear-gradient(to right, #0f172a, #1e3a8a);
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #cbd5e1;
+    }
+
+    /* Section layout */
+    section {
+      max-width: 1200px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    /* Services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 2rem;
+    }
+    .service {
+      background: white;
+      padding: 2rem;
+      border-radius: 12px;
+      border-left: 5px solid #3b82f6;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+    .service:hover {
+      transform: translateY(-6px);
+    }
+    .service h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.75rem;
+      color: #1e40af;
+    }
+    .service p {
+      color: #475569;
+    }
+
+    /* Why Choose Us */
+    .why-us {
+      background: #1e293b;
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+    }
+    .why-points {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 2rem;
+      justify-content: center;
+    }
+    .why-card {
+      background: #334155;
+      padding: 1.5rem;
+      border-radius: 8px;
+      flex: 1 1 260px;
+      transition: background 0.3s ease;
+    }
+    .why-card:hover {
+      background: #475569;
+    }
+
+    /* Tech Stack */
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      justify-content: center;
+    }
+    .tech-item {
+      background: #f3f4f6;
+      padding: 1rem 1.5rem;
+      border-left: 4px solid #06b6d4;
+      border-radius: 8px;
+      flex: 1 1 260px;
+    }
+
+    /* Industries */
+    .industries {
+      background: #fefefe;
+      padding: 2rem 1rem;
+      border-radius: 12px;
+    }
+    .industry-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-top: 1.5rem;
+    }
+    .industry {
+      background: #e0f2fe;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      color: #0369a1;
+    }
+
+    /* Workflow */
+    .workflow {
+      background: linear-gradient(to right, #10b981, #059669);
+      color: white;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+    }
+    .workflow-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .step {
+      background: rgba(255,255,255,0.1);
+      padding: 1.2rem;
+      border-radius: 10px;
+    }
+
+    /* Testimonials */
+    .testimonials {
+      background: #f8fafc;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+    }
+    .testimonial-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+    .testimonial {
+      background: white;
+      border-left: 4px solid #0ea5e9;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+
+    /* CTA */
+    .cta {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      border-radius: 12px;
+    }
+    .cta a {
+      margin-top: 1.5rem;
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .cta a:hover {
+      background: #1d4ed8;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background: #e2e8f0;
+      color: #374151;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tech Cryptors IT Services</h1>
+    <p>Professional Software Solutions Tailored to Your Business</p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Our Services</h2>
+    <div class="services">
+      <div class="service">
+        <h3>Custom Software Development</h3>
+        <p>Build tailored applications that meet your specific business needs and processes.</p>
+      </div>
+      <div class="service">
+        <h3>Database Design & Development</h3>
+        <p>Robust and secure database structures optimized for scalability and performance.</p>
+      </div>
+      <div class="service">
+        <h3>Resource Management Software</h3>
+        <p>Efficiently manage your workforce, scheduling, and project tracking in one place.</p>
+      </div>
+      <div class="service">
+        <h3>CRM Solutions</h3>
+        <p>Enhance customer relationships with personalized and automated CRM workflows.</p>
+      </div>
+      <div class="service">
+        <h3>ERP Software</h3>
+        <p>Streamline business operations and centralize your company data with ERP systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-us">
+    <h2 class="section-title">Why Choose Us</h2>
+    <div class="why-points">
+      <div class="why-card"><strong>✅ Expert Developers:</strong> Skilled across modern stacks.</div>
+      <div class="why-card"><strong>✅ Agile Workflow:</strong> Transparent sprints and updates.</div>
+      <div class="why-card"><strong>✅ Scalable Solutions:</strong> Built to grow with your business.</div>
+      <div class="why-card"><strong>✅ Reliable Support:</strong> Dedicated post-deployment service.</div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Technology Stack</h2>
+    <div class="tech-stack">
+      <div class="tech-item"><strong>Frontend:</strong> React, Vue, Tailwind, Bootstrap</div>
+      <div class="tech-item"><strong>Backend:</strong> Node.js, Laravel, .NET, Django</div>
+      <div class="tech-item"><strong>Mobile:</strong> Flutter, React Native, Kotlin</div>
+      <div class="tech-item"><strong>Database:</strong> MySQL, MongoDB, PostgreSQL</div>
+    </div>
+  </section>
+
+  <section class="industries">
+    <h2 class="section-title">Industries We Serve</h2>
+    <div class="industry-list">
+      <div class="industry">Healthcare</div>
+      <div class="industry">E-Commerce</div>
+      <div class="industry">Education</div>
+      <div class="industry">Real Estate</div>
+      <div class="industry">Logistics</div>
+      <div class="industry">Retail</div>
+    </div>
+  </section>
+
+  <section class="workflow">
+    <h2 class="section-title">Our Workflow</h2>
+    <div class="workflow-steps">
+      <div class="step"><strong>1. Consultation</strong><br>Understand your business goals.</div>
+      <div class="step"><strong>2. Planning</strong><br>Crafting a roadmap for success.</div>
+      <div class="step"><strong>3. Development</strong><br>Agile coding & feature rollout.</div>
+      <div class="step"><strong>4. Deployment</strong><br>Seamless go-live experience.</div>
+      <div class="step"><strong>5. Maintenance</strong><br>Continuous support & scaling.</div>
+    </div>
+  </section>
+
+  <section class="testimonials">
+    <h2 class="section-title">Client Testimonials</h2>
+    <div class="testimonial-list">
+      <div class="testimonial">
+        ⭐ “Tech Cryptors built us a stunning ERP that saved us hours weekly!”<br><br><strong>— Operations Lead, Logistics Co.</strong>
+      </div>
+      <div class="testimonial">
+        ⭐ “Their CRM integration streamlined our entire customer lifecycle.”<br><br><strong>— CEO, Online Retailer</strong>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <h2>Ready to Transform Your Business?</h2>
+    <p>Contact us to build smart, scalable, and future-ready digital solutions.</p>
+    <a href="#">Get a Free Quote</a>
+  </section>
+
+  <footer>
+    © 2025 Tech Cryptors IT Services. All rights reserved.
+  </footer>
+
+</body>
+</html>

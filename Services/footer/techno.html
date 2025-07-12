@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #0b1c3d;
+        }
+        body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+            padding: 2px;
+            background-color: #0b1c3d;
+        }
+        .image-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .pic img{
+            width: 160px;
+            height: 160px;
+        }
+        .flut img{
+            width: 160px;
+            height: 160px;
+        }
+        .image-item img {
+            width: 100px;
+            height: 100px;
+        }
+      
+        .image-name {
+            margin-top: 2px;
+            color: rgb(32, 34, 34);
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div style="display: flex; text-align: center; justify-content: center;">
+            <p style="text-align: center; font-size: 45px; color: white; font-weight: 700;">
+                We Develop Websites , Softwares , Applications etc. using following technologies</p>
+        </div>
+        <div class="image-container">
+            <div class="pic">
+                <img src="./web.png" alt="React">
+          </div>
+            <div class="pic">
+                <img src="./code.png" alt="Angular">
+            </div>
+            <div class="flut">
+                <img src="./hardware.png" alt="MongoDb">
+            </div>
+            <div class="flut">
+                <img src="./android.png" alt="Flutter">
+            </div>
+            <div class="flut">
+                <img src="./da.png" alt="Python">
+            </div>
+            <div class="flut">
+                <img src="./ios.png" alt="Python">
+            </div>
+          
+        </div>
+    </div>
+</body>
+</html>

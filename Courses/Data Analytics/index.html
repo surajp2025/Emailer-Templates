@@ -1,0 +1,1201 @@
+<!DOCTYPE html>
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office"
+>
+  <head>
+    <meta charset="utf-8" />
+    <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width" />
+    <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting" />
+    <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title>
+    <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700"
+      rel="stylesheet"
+    />
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+      /* What it does: Remove spaces around the email design added by some email clients. */
+      /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+      html,
+      body {
+        margin: 0 auto !important;
+        padding: 0 !important;
+        height: 100% !important;
+        width: 100% !important;
+        background: #f1f1f1;
+      }
+
+      /* What it does: Stops email clients resizing small text. */
+      * {
+        -ms-text-size-adjust: 100%;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      /* What it does: Centers email on Android 4.4 */
+      div[style*='margin: 16px 0'] {
+        margin: 0 !important;
+      }
+
+      /* What it does: Stops Outlook from adding extra spacing to tables. */
+      table,
+      td {
+        mso-table-lspace: 0pt !important;
+        mso-table-rspace: 0pt !important;
+      }
+
+      /* What it does: Fixes webkit padding issue. */
+      table {
+        border-spacing: 0 !important;
+        border-collapse: collapse !important;
+        table-layout: fixed !important;
+        margin: 0 auto !important;
+      }
+
+      /* What it does: Uses a better rendering method when resizing images in IE. */
+      img {
+        -ms-interpolation-mode: bicubic;
+      }
+
+      /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+      a {
+        text-decoration: none;
+      }
+
+      /* What it does: A work-around for email clients meddling in triggered links. */
+      *[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+        border-bottom: 0 !important;
+        cursor: default !important;
+        color: inherit !important;
+        text-decoration: none !important;
+        font-size: inherit !important;
+        font-family: inherit !important;
+        font-weight: inherit !important;
+        line-height: inherit !important;
+      }
+
+      /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+      .a6S {
+        display: none !important;
+        opacity: 0.01 !important;
+      }
+
+      /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+      .im {
+        color: inherit !important;
+      }
+
+      /* If the above doesn't work, add a .g-img class to any image in question. */
+      img.g-img + div {
+        display: none !important;
+      }
+
+      /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+      /* Create one of these media queries for each additional viewport size you'd like to fix */
+    </style>
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+      .primary {
+        background: #ff8b00;
+      }
+      .bg_white {
+        background: #ffffff;
+      }
+      .bg_light {
+        background: #fafafa;
+      }
+      .bg_black {
+        background: #000000;
+      }
+      .bg_dark {
+        background: rgba(231, 231, 231, 0.8);
+      }
+      .email-section {
+        padding: 1.5em;
+      }
+
+      /*BUTTON*/
+      .btn {
+        padding: 5px 20px;
+        display: inline-block;
+      }
+      .btn.btn-primary {
+        border-radius: 5px;
+        background: #0099ff;
+        color: #ffffff;
+      }
+      .btn.btn-white {
+        border-radius: 5px;
+        background: #ffffff;
+        color: #000000;
+      }
+      .btn.btn-white-outline {
+        border-radius: 5px;
+        background: transparent;
+        border: 1px solid #fff;
+        color: #fff;
+      }
+      .btn.btn-black {
+        border-radius: 0px;
+        background: #000;
+        color: #fff;
+      }
+      .btn.btn-black-outline {
+        border-radius: 0px;
+        background: transparent;
+        border: 2px solid #000;
+        color: #000;
+        font-weight: 700;
+      }
+      .btn.btn-custom {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 12px;
+        color: #15679e;
+      }
+
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: 'Work Sans', sans-serif;
+        color: #000000;
+        margin-top: 0;
+        font-weight: 400;
+      }
+
+      body {
+        font-family: 'Work Sans', sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 1.8;
+        color: rgba(0, 0, 0, 0.5);
+      }
+
+
+
+      /*HERO*/
+      .hero {
+        position: relative;
+        z-index: 0;
+      }
+      .hero .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: '';
+        width: 100%;
+        background: #000000;
+        z-index: -1;
+        opacity: 0.6;
+      }
+      .hero .text {
+        color: rgba(255, 255, 255, 0.9);
+        max-width: 90%;
+        margin: 0 auto 0;
+      }
+      .hero .text h2 {
+        color: #fff;
+        font-size: 34px;
+        margin-bottom: 0;
+        font-weight: 400;
+        line-height: 1.4;
+      }
+
+    
+      .text-services {
+        padding: 10px 20px;
+        text-align: center;
+      }
+      .text-services h3 {
+        font-size: 18px;
+        font-weight: 400;
+      }
+      .text-services p {
+        font-size: 14px;
+      }
+
+    
+
+      .services-list img {
+        float: left;
+      }
+      .services-list h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+      .services-list p {
+        margin: 0;
+      }
+
+      /*COUNTER*/
+     
+
+    
+
+      .heading-section h2 {
+        color: #000000;
+        font-size: 28px;
+        margin-top: 0;
+        line-height: 1.4;
+        font-weight: 400;
+      }
+      .heading-section .subheading {
+        margin-bottom: 10px !important;
+        display: inline-block;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        color: rgb(0, 0, 0);
+        position: relative;
+      }
+      .heading-section .subheading::after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: -10px;
+        content: '';
+        width: 100%;
+        height: 2px;
+        background: #0099ff;
+        margin: 0 auto;
+      }
+
+      .heading-section-white {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    </style>
+  </head>
+
+  <body
+    width="100%"
+    style="
+      margin: 0;
+      padding: 0 !important;
+      mso-line-height-rule: exactly;
+      background-color: #fafafa;
+    "
+  >
+    <center style="width: 100%; background-color: #c4c4c4">
+      <div style="max-width: 750px; margin: 0 auto" class="email-container">
+        <!-- BEGIN BODY -->
+        <table
+          valign="center"
+          role="presentation"
+          cellspacing="0"
+          cellpadding="0"
+          border="0"
+          width="100%"
+          style="margin: 0 auto"
+        >
+          <tr >
+            <td valign="top" style="padding: 0.5em 2.5em;background-color: #ffffff;">
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td width="75%" class="logo" style="text-align: left">
+                    <a href="https://techcryptors.com/">
+                      <img
+                        src="https://www.techcryptors.com/wp-content/uploads/2023/04/cropped-png-logo-160x93-1.png"
+                        alt="Professional Web Development Service"
+                        title="TECH CRYPTORS"
+                        width="100px"
+                    /></a>
+                  </td>
+                  <td width="25%" class="logo" style="text-align: right">
+                    <table style="border: none; width: auto">
+                      <tr>
+                        <td>
+                          <a href="https://techcryptors.com/">
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/web.png"
+                              alt=""
+                              width="20px"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href="https://api.whatsapp.com/send/?phone=918850528255&text&type=phone_number&app_absent=0"
+                          >
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/wp.png"
+                              alt=""
+                              width="22px"
+                              style="padding-left: 2px"
+                            />
+                          </a>
+                        </td>
+
+                        <td>
+                          <a href="https://www.instagram.com/techcryptors/">
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/ig.png"
+                              alt=""
+                              width="26px"
+                            />
+                          </a>
+                        </td>
+
+                        <td>
+                          <a href="https://www.facebook.com/TechCryptors/">
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/fb.png"
+                              alt=""
+                              width="23px"
+                            />
+                          </a>
+                        </td>
+
+                        <td>
+                          <a
+                            href="https://in.linkedin.com/company/tech-cryptors"
+                          >
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/ln.png"
+                              alt=""
+                              width="26px"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a href="https://x.com/techcryptors">
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/tw.png"
+                              alt=""
+                              width="22px"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href="https://www.youtube.com/channel/UCam7cscqE1raC09JTYz-zbg"
+                          >
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/yt.png"
+                              alt=""
+                              width="22px"
+                            />
+                          </a>
+                        </td>
+                        <td>
+                          <a
+                            href="https://www.google.com/search?q=tech+cryptors+reviews&rlz=1C1ONGR_enIN1058IN1058&oq=techcryptors+reviews&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgNGIAEMg0IAhAAGIYDGIAEGIoFMg0IAxAAGIYDGIAEGIoFMg0IBBAAGIYDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINjg2MmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x3be7b0e690555555:0x5be7a1480ca87d76,3,,,,"
+                          >
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/google.png"
+                              alt=""
+                              width="20px"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td colspan="8" valign="top">
+                          <a href="tel:8850528255">
+                            <img
+                              src="https://techcryptors.com/wp-content/uploads/emailer/icons/contact.png"
+                              alt="8850528255"
+                              width="130px"
+                            />
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end tr -->
+          <tr>
+            <td
+              valign="middle"
+              class="hero bg_white"
+              style="
+                background-image: url(https://www.techcryptors.com/wp-content/uploads/2023/01/DataAnalytics-scaled.jpg);
+                background-size: cover;
+                height: 400px;
+              "
+            >
+              <div class="overlay"></div>
+              <table>
+                <tr>
+                  <td>
+                    <div
+                      class="text"
+                      style="text-align: center; margin-top: 15px"
+                    >
+                      <h2 style="font-size: 50px">Data Analytics</h2>
+                      <p style="margin-top: 15px">
+                        At Tech Cryptors, our Data Analytics course goes beyond
+                        the basics <br />
+                        we are offering a hands-on, industry-ready learning
+                        experience that empowers you to decode data, predict
+                        trends, and drive smarter decisions become a job-ready
+                        Data Analyst.
+                      </p>
+                      <p>
+                        <a
+                          href="https://www.techcryptors.com/career-enhancement/"
+                          class="btn btn-primary"
+                          >Enroll Now</a
+                        >
+                      </p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+          <!-- end tr -->
+
+          <!-- end: tr -->
+          <tr>
+            <td class="bg_dark email-section ;">
+              <div
+                class="heading-section"
+                style="text-align: center; padding: 0 0px;"
+              >
+                <h2 style="margin-bottom: 2px" class="subheading">OUR TRAINING COURSES</h2>
+                <p style="text-align: justify">
+                  Data Analytics is not a single course, you need to learn many
+                  different tools, and different languages to acquire complete
+                  knowledge of data analytics. This course will try to cover
+                  most of it which includes Training on different courses like :-
+                </p>
+              </div>
+             <tr>
+              <td style="background-color: #ffffff;">
+                 <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="../../../alteryx2889.logowik..png"
+                            alt=""
+                            style="
+                              width: 100px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>Alteryx</h3>
+                          <p style="text-align: justify">
+                            Uncover the secrets of data analytics and
+                            visualization with our specialized Alteryx training
+                            course. Learn the alchemical process of extracting,
+                            transforming, and working with data across various
+                            tabs and processes
+                          </p>
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/dataanalytics/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="https://img.icons8.com/?size=100&id=9Kvi1p1F0tUo&format=png&color=000000"
+                            alt=""
+                            style="
+                              width: 30px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>Tableau</h3>
+                          <p style="text-align: justify">
+                            Data Analytics is a process of inspecting,
+                            cleansing, transforming and modeling data with the
+                            goal of discovering useful information, informing
+                            conclusion and supporting decision-making.
+                          </p>
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/website-development-courses/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="https://img.icons8.com/?size=100&id=Ny0t2MYrJ70p&format=png&color=000000"
+                            alt=""
+                            style="
+                              width: 50px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>Power BI</h3>
+                          <p style="text-align: justify">
+                            Learning to create powerful graphs, link diverse
+                            data sources, track essential metrics, and visualize
+                            insights effectively using Power BI can transform
+                            the way you interact with data. Combine multiple
+                            data tables using relationships and joins to create
+                            a unified data model.
+                          </p>
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/database-management/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="./sas.png"
+                            alt=""
+                            style="
+                              width: 90px;
+                              max-width: 600px;
+                              height: 49px;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>SAS</h3>
+                          <p style="text-align: justify">
+                            Learn from basics commands in SAS used for
+                            statistical analysis, visualization of data.
+                            Creating different codes for different functions,
+                            plotting graphs, charts etc. SAS training can
+                            provide your company with the tools to develop,
+                            maintain and operate data management systems.
+                          </p>
+
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/android-app-development-eclipse/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="https://img.icons8.com/?size=100&id=BEMhRoRy403e&format=png&color=000000"
+                            alt=""
+                            style="
+                              width: 50px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>Advance Excel</h3>
+                          <p style="text-align: justify">
+                            Learn to use different functions of Excel along with
+                            creating graphs, plots, performing calculations etc.
+                            Advanced Excel training covers a wide range of
+                            topics, such as data analysis, macros, functions and
+                            formulas, working with large data sets, creating
+                            charts, and more.
+                          </p>
+
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/artificial-intelligence-training-course/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="https://img.icons8.com/?size=100&id=9nLaR5KFGjN0&format=png&color=000000"
+                            alt=""
+                            style="
+                              width: 50px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>MySQL Programming</h3>
+                          <p style="text-align: justify">
+                            Learn to create, manage, and interact with databases
+                            using MySQL. Gain a deep understanding of MySQL as a
+                            relational database management system and become
+                            proficient in writing SQL queries, managing tables,
+                            and handling complex data operations.
+                          </p>
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/robotics-training-course/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              <table
+                role="presentation"
+                border="0"
+                cellpadding="0"
+                cellspacing="0"
+                width="100%"
+              >
+                <tr>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="https://img.icons8.com/?size=100&id=l75OEUJkPAk4&format=png&color=000000"
+                            alt=""
+                            style="
+                              width: 50px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>Python Programming</h3>
+                          <p style="text-align: justify">
+                            Learning basics of Python Programming, starting from
+                            syntax till making your own applications based on
+                            Python. Python to exploring object-oriented
+                            programming and data structures, this course covers
+                            it all. You’ll learn how to write clean, efficient,
+                            and maintainable code, leveraging Python’s extensive
+                            standard library and popular frameworks.
+                          </p>
+
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/artificial-intelligence-training-course/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td
+                    valign="top"
+                    width="50%"
+                    style="padding-top: 20px"
+                    class="services"
+                  >
+                    <table
+                      role="presentation"
+                      cellspacing="0"
+                      cellpadding="0"
+                      border="0"
+                      width="100%"
+                    >
+                      <tr>
+                        <td class="icon">
+                          <img
+                            src="https://img.icons8.com/?size=100&id=CLvQeiwFpit4&format=png&color=000000"
+                            alt=""
+                            style="
+                              width: 50px;
+                              max-width: 600px;
+                              height: auto;
+                              margin: auto;
+                              display: block;
+                            "
+                          />
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="text-services">
+                          <h3>R Programming</h3>
+                          <p style="text-align: justify">
+                            Leverage the power of R language for learning data
+                            analytics and visualization. Explore Alteryx to
+                            extract, transform, and analyze data seamlessly
+                            across various tabs and processes. Unlock the
+                            potential of R for enhanced data-driven
+                            decision-making! Unleash your data analysis
+                            potential as we dive deep into the world of R
+                            programming.
+                          </p>
+                          <p>
+                            <a
+                              href="https://www.techcryptors.com/robotics-training-course/"
+                              class="btn btn-custom"
+                              >Read more</a
+                            >
+                          </p>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+              </td>
+             </tr>
+ 
+              <!-- end: tr -->
+              <tr>
+                <td class="bg_dark email-section" style="width: 100%">
+                  <h1 style="text-align: center">Why Choose Us?</h1>
+                  <table
+                    role="presentation"
+                    border="0"
+                    cellpadding="0"
+                    cellspacing="0"
+                    width="100%"
+                  >
+                    <tr>
+                      <td valign="middle" width="50%">
+                        <table
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td
+                              class="text-services"
+                              style="text-align: left; padding-right: 25px"
+                            >
+                              <div class="services-list">
+                                <div class="text">
+                                  <h3>Feedback</h3>
+                                  <p>
+                                    You can check feedback about our services
+                                    anywhere or ask any of our clients about the
+                                    same which you will always find positive.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="services-list">
+                                <div class="text">
+                                  <h3>Quality</h3>
+                                  <p>
+                                    Quality of our service & knowledge is up to
+                                    date which gives our clients liberty to
+                                    choose the technology they are comfortable
+                                    with.
+                                  </p>
+                                </div>
+                              </div>
+                              <div class="services-list">
+                                <div class="text">
+                                  <h3>Punctuality</h3>
+                                  <p>
+                                    We deliver proposed services before the
+                                    deadline promised by us with all
+                                    functionalities discussed while starting the
+                                    project.
+                                  </p>
+                                </div>
+                              </div>
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                      <td valign="middle" width="50%">
+                        <table
+                          role="presentation"
+                          cellspacing="0"
+                          cellpadding="0"
+                          border="0"
+                          width="100%"
+                        >
+                          <tr>
+                            <td>
+                              <img
+                                src="https://www.techcryptors.com/wp-content/uploads/2021/03/banner.jpg"
+                                alt=""
+                                style="
+                                  width: 100%;
+                                  max-width: 600px;
+                                  height: auto;
+                                  margin: auto;
+                                  display: block;
+                                "
+                              />
+                            </td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <!-- end: tr -->
+		
+<table style="border: none; width: 100%;" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody>
+        <tr>
+            <td style="margin-bottom: 0px" valign="top">
+            <table style="width: 100%;">
+                <tbody>
+                    <tr>
+                        <td  style="background: #003742; width: 100%; text-align: center; padding-bottom: 5px;" valign="top">
+                        <table  style="border: none; width: 100%;" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                            <tbody>
+                                <tr>
+                                    <td style="text-align: center; width: 100%;" valign="middle">
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                               <td valign="middle" width="33.333%" style="padding-left: 20px; padding-right: 60px;" >
+                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td 
+														valign="top" width="33.333%"
+														><a href="https://techcryptors.com/" >
+                                                            <img alt="" src="https://techcryptors.com/wp-content/uploads/emailer/01/tc-whiteLogo.png"  title="TECH CRYPTORS LOGO"  width="180"/>
+                                                        </a></td>
+                                                    </tr>
+                                                </table>
+                                               </td>
+											   
+                                                <td valign="middle" width="33.333%" style="padding-left: 20px; padding-right: 30px;">
+                                                    <table  role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                        <tr>
+                                                            <td 
+															valign="middle" >
+                                                                <img alt="our-services-text" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/courses.png" style=" margin-top: 5px; padding-top: 0px; width:100%; margin-bottom: 5px;" />
+                                                            </td>
+															
+															<tr>
+                                                                <td valign="middle" width="33.333%" style="margin: 0; text-align: center ;">
+                                                                    <a href="https://www.techcryptors.com/artificial-intelligence-training-course/"><img alt="ai-services" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/ai.png" style="width:100%;margin-bottom: 2px"/></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="middle" width="33.333%">
+                                                                    <a href="https://www.techcryptors.com/website-development-courses/"><img alt="website-development" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/web.png" style="width:100%"/></a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td valign="middle" width="33.333%">
+                                                                    <a href="https://www.techcryptors.com/flutter-app-development-android-studio/"><img alt="application-development" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/appli.png" style="width:100%" /></a>
+                                                                </td>
+                                                            </tr>
+															<tr>
+                                                                <td valign="middle" width="33.333%">
+                                                                    <a href="https://www.techcryptors.com/dataanalytics/"><img alt="software-development" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/da.png" style="width:100%;"/></a>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                            
+                                                        </tr>
+                                                    </table>
+                                                   
+                                               
+                                               
+                                                </td>
+                                                <td
+                                                valign="middle" width="33.333%" 
+												style="padding-left: 40px; padding-right: 10px;"
+                                                >
+                                                <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="middle" width="33.333%" >
+                                                            <img alt="follow-us-text" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/followus.png"
+															style=" margin-top: 5px; padding-top: 0px; width:100%;margin-bottom: 5px; "
+															/>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="middle" width="33.333%">
+                                                            <a href="https://www.facebook.com/TechCryptors/"><img alt="facebook-logo" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/fb.png" style="width: 100%;" /></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="middle" width="33.333%">
+                                                            <a href="https://www.instagram.com/techcryptors/"><img alt="instagram-logo" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/ig.png" style="width: 100%;"/></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="middle" width="33.333%">
+                                                            <a href="https://in.linkedin.com/company/tech-cryptors"><img alt="linkedin-logo" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/ln.png" style="width: 100%" /></a>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td valign="middle" width="33.333%">
+                                                            <a href="https://x.com/techcryptors"><img alt="twitter-logo" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/tw.png" style="width: 100%;" /></a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+									</td>
+									</tr>
+                                    <tr>
+
+                                        <td>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 100%; max-width: 750px;">
+                                                        <hr style="border-color: #000000" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 100%;margin: 0;padding: 0;"><a href="https://techcryptors.com/"><img alt="technologies-we-use" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/techstack.png" style="max-width: 690px;margin-top: 7px;"/></a></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tbody>
+                                                    <tr>
+                                                        <td style="width: 100%; max-width: 750px;">
+                                                        <hr style="border-color: #000" /></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>	
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>
+                                            <table class="content" style="padding: 0px 2px; width: 100%;" role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                <tr>
+                                                    <td style="text-align: left;">
+                                                        <a href="https://techcryptors.com/">
+                                                            <img alt="copyright_text" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/cp002.png" />
+                                                        </a>
+                                                    </td>
+                                                    <td style="text-align: right;">
+                                                        <a href="[unsubscribe]">
+                                                            <img alt="unsubscribe-text" src="https://techcryptors.com/wp-content/uploads/emailer/Footer/TC/green/unsub.png"  />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                            </tbody>
+                        </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </td>
+</table>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </center>
+  </body>
+</html>

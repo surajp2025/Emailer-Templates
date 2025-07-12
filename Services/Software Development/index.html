@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Cryptors Software Services Email Campaign</title>
+  <style>
+    body {
+      font-family: 'Poppins', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #e9ecef;
+      color: #333;
+    }
+    .container {
+      max-width: 680px;
+      margin: 30px auto;
+      background: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    }
+    .header {
+      background: linear-gradient(135deg, #007bff, #00d4ff);
+      padding: 40px 20px;
+      text-align: center;
+      color: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(255,255,255,0.2), transparent);
+      transform: rotate(45deg);
+    }
+    .header img {
+      max-width: 180px;
+      margin-bottom: 15px;
+      position: relative;
+      z-index: 1;
+    }
+    .header h1 {
+      font-size: 32px;
+      font-weight: 700;
+      margin: 10px 0;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+      position: relative;
+      z-index: 1;
+    }
+    .header p {
+      font-size: 16px;
+      opacity: 0.9;
+      margin: 0;
+      position: relative;
+      z-index: 1;
+    }
+    .content {
+      padding: 40px 30px;
+    }
+    .content h2 {
+      font-size: 24px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin-bottom: 15px;
+      position: relative;
+    }
+    .content h2::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: linear-gradient(90deg, #007bff, #00d4ff);
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      border-radius: 2px;
+    }
+    .content p {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #4a4a4a;
+      margin-bottom: 20px;
+    }
+    .section {
+      margin-bottom: 50px;
+      padding: 25px;
+      border-radius: 12px;
+      background: #f8f9fa;
+      transition: all 0.3s ease;
+    }
+    .section:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .section img {
+      max-width: 100%;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+    .service-card {
+      display: flex;
+      align-items: center;
+      padding: 20px;
+      background: #fff;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: scale(1.02);
+    }
+    .service-card img {
+      width: 60px;
+      height: 60px;
+      margin-right: 20px;
+      border-radius: 8px;
+    }
+    .service-card h3 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a1a;
+      margin: 0 0 10px;
+    }
+    .service-card p {
+      font-size: 14px;
+      color: #666;
+      margin: 0;
+    }
+    .cta-button {
+      display: inline-block;
+      padding: 14px 35px;
+      background: linear-gradient(45deg, #007bff, #00d4ff);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 50px;
+      font-size: 16px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: linear-gradient(45deg, #0056b3, #0096cc);
+      transform: translateY(-2px);
+    }
+    .highlight {
+      background: linear-gradient(135deg, #e7f0fe, #e6fffa);
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      border-left: 5px solid #007bff;
+    }
+    .quote {
+      font-style: italic;
+      font-size: 16px;
+      color: #2d3748;
+      padding: 15px 20px;
+      background: #edf2ff;
+      border-radius: 8px;
+      margin: 20px 0;
+    }
+    .footer {
+      background: linear-gradient(135deg, #1a1a1a, #2d3748);
+      padding: 30px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+    }
+    .footer a {
+      color: #00d4ff;
+      text-decoration: none;
+      margin: 0 12px;
+      font-weight: 500;
+    }
+    .footer a:hover {
+      text-decoration: underline;
+    }
+    .social-icons img {
+      width: 28px;
+      margin: 0 12px;
+      transition: transform 0.3s ease;
+    }
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+    @media (max-width: 600px) {
+      .container {
+        width: 95%;
+        margin: 15px auto;
+      }
+      .header h1 {
+        font-size: 26px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .section {
+        padding: 15px;
+      }
+      .service-card {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .service-card img {
+        margin-bottom: 15px;
+      }
+      .cta-button {
+        padding: 12px 25px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <img src="https://techcryptors.services/wp-content/uploads/2023/01/Group-4-1.png" alt="Tech Cryptors Logo">
+      <h1>Revolutionize Your Business with Tech Cryptors!</h1>
+      <p>May 2025 | Unleashing Next-Gen Software Solutions</p>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- Welcome Section -->
+      <div class="section">
+        <h2>🌟 Your Tech Transformation Starts Here!</h2>
+        <p>
+          Welcome to <strong>Tech Cryptors</strong>, where innovation meets excellence! As an ISO 9001:2015 certified leader, we craft bespoke software, AI-driven applications, and transformative solutions to propel your business into the future. Dive into this vibrant email to explore our services, inspiring success stories, and game-changing tech trends!
+        </p>
+        <p>
+          <a href="https://techcryptors.services/software-development/" class="cta-button">Discover Our Expertise</a>
+        </p>
+      </div>
+
+      <!-- Our Services -->
+      <div class="section">
+        <h2>💡 Our Cutting-Edge Software Services</h2>
+        <p>
+          At Tech Cryptors, we offer a suite of software development services designed to meet your unique business needs. Explore how we can empower your vision with our expertise.
+        </p>
+
+        <!-- Service 1: Custom Software Development -->
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/60/code.png" alt="Custom Software Icon">
+          <div>
+            <h3>Custom Software Development</h3>
+            <p>
+              Transform your ideas into reality with tailor-made software solutions. From enterprise-grade applications to dynamic platforms, we leverage technologies like Angular, React, and MongoDB to deliver secure, scalable, and high-performance software that drives growth.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 2: Web Development -->
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/60/web.png" alt="Web Development Icon">
+          <div>
+            <h3>Web Development</h3>
+            <p>
+              Create stunning, responsive websites that captivate your audience. Our team excels in crafting user-friendly interfaces and robust backends using modern frameworks, ensuring seamless performance across devices and exceptional user experiences.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 3: Mobile App Development -->
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/60/mobile.png" alt="Mobile App Icon">
+          <div>
+            <h3>Mobile App Development</h3>
+            <p>
+              Engage your users on the go with intuitive mobile applications. We design and develop feature-rich iOS and Android apps that combine sleek design with powerful functionality, tailored to your business objectives.
+            </p>
+          </div>
+        </div>
+
+        <!-- Service 4: AI & Machine Learning Solutions -->
+        <div class="service-card">
+          <img src="https://img.icons8.com/color/60/artificial-intelligence.png" alt="AI Icon">
+          <div>
+            <h3>AI & Machine Learning Solutions</h3>
+            <p>
+              Harness the power of AI to revolutionize your operations. From predictive analytics to intelligent automation, our AI and ML solutions enhance decision-making, streamline processes, and unlock new opportunities for innovation.
+            </p>
+          </div>
+        </div>
+
+        <p>
+          <a href="https://techcryptors.services/software-development/" class="cta-button">Explore All Services</a>
+        </p>
+      </div>
+
+      <!-- Client Success Story -->
+      <div class="section">
+        <h2>🏆 Transforming Industries: Client Success</h2>
+        <img src="https://techcryptors.services/wp-content/uploads/2022/04/software-devlopment-768x614.png" alt="Client Success">
+        <p>
+          We partnered with a leading manufacturing firm to modernize their legacy systems with a cutting-edge touchscreen interface. Our solution boosted operational efficiency by 40% and delivered an intuitive user experience, earning rave reviews from their team.
+        </p>
+        <p class="quote">
+          "Tech Cryptors delivered beyond our expectations, blending innovation with flawless execution." – Mr. Kellen Massey, Founder & Tech Head
+        </p>
+        <p>
+          <a href="https://techcryptors.services/it-services/">See More Case Studies</a>
+        </p>
+      </div>
+
+      <!-- Tech Trends -->
+      <div class="section">
+        <h2>🔥 Trending Now: AI-Powered Innovation</h2>
+        <p>
+          AI is reshaping the tech landscape, and we’re at the forefront! Our AI-driven solutions, from smart automation to advanced analytics, empower businesses to stay ahead. Join our upcoming webinar to discover how AI can transform your software strategy.
+        </p>
+        <div class="highlight">
+          <strong>Exclusive Invite:</strong> Reserve your spot for our "AI Revolution in Software Development" webinar and unlock the future of tech!
+        </div>
+        <p>
+          <a href="https://techcryptors.com/career/" class="cta-button">Join the Webinar</a>
+        </p>
+      </div>
+
+      <!-- Training Programs -->
+      <div class="section">
+        <h2>📚 Empower Your Team with Tech Skills</h2>
+        <p>
+          Stay ahead in the tech race with our industry-leading training programs. From MERN Stack to Python and Data Science, our hands-on courses equip professionals and students with the skills to thrive in a digital world.
+        </p>
+        <div class="highlight">
+          <strong>Featured Course:</strong> Master full-stack development with our Long-Term MERN Stack Training. Enroll now and code the future!
+        </div>
+        <p>
+          <a href="https://techcryptors.com/career/" class="cta-button">Start Learning Today</a>
+        </p>
+      </div>
+
+      <!-- Call to Action -->
+      <div class="section" style="text-align: center; background: linear-gradient(135deg, #e7f0fe, #e6fffa);">
+        <h2>🚀 Let’s Build Something Extraordinary!</h2>
+        <p>
+          Ready to elevate your business with world-class software or empower your team with top-tier skills? Tech Cryptors is your partner in innovation. Connect with us today and let’s shape the future together!
+        </p>
+        <p>
+          <a href="https://techcryptors.services/contact-us/" class="cta-button">Get Started Now</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        Tech Cryptors | ISO 9001:2015 Certified | Mumbai, India
+      </p>
+      <p class="social-icons">
+        <a href="https://www.facebook.com/techcryptors"><img src="https://img.icons8.com/color/28/facebook-new.png" alt="Facebook"></a>
+        <a href="https://www.instagram.com/tech_cryptors"><img src="https://img.icons8.com/color/28/instagram-new.png" alt="Instagram"></a>
+        <a href="https://www.linkedin.com/company/tech-cryptors"><img src="https://img.icons8.com/color/28/linkedin.png" alt="LinkedIn"></a>
+        <a href="https://twitter.com/techcryptors"><img src="https://img.icons8.com/color/28/twitter.png" alt="Twitter"></a>
+      </p>
+      <p>
+        <a href="https://techcryptors.services/contact-us/">Contact Us</a> | 
+        <a href="https://techcryptors.services/privacy-policy/">Privacy Policy</a>
+      </p>
+      <p>
+        © 2025 Tech Cryptors. All rights reserved.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

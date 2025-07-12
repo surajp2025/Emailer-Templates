@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8"> <!-- utf-8 works for most cases -->
+    <meta name="viewport" content="width=device-width"> <!-- Forcing initial-scale shouldn't be necessary -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!-- Use the latest (edge) version of IE rendering engine -->
+    <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
+    <title></title> <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700" rel="stylesheet">
+
+    <!-- CSS Reset : BEGIN -->
+    <style>
+
+        /* What it does: Remove spaces around the email design added by some email clients. */
+        /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+        html,
+body {
+    margin: 0 auto !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    background: #f1f1f1;
+}
+
+/* What it does: Stops email clients resizing small text. */
+* {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* What it does: Centers email on Android 4.4 */
+div[style*="margin: 16px 0"] {
+    margin: 0 !important;
+}
+
+/* What it does: Stops Outlook from adding extra spacing to tables. */
+table,
+td {
+    mso-table-lspace: 0pt !important;
+    mso-table-rspace: 0pt !important;
+}
+
+/* What it does: Fixes webkit padding issue. */
+table {
+    border-spacing: 0 !important;
+    border-collapse: collapse !important;
+    table-layout: fixed !important;
+    margin: 0 auto !important;
+}
+
+/* What it does: Uses a better rendering method when resizing images in IE. */
+img {
+    -ms-interpolation-mode:bicubic;
+}
+
+/* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+a {
+    text-decoration: none;
+}
+
+/* What it does: A work-around for email clients meddling in triggered links. */
+*[x-apple-data-detectors],  /* iOS */
+.unstyle-auto-detected-links *,
+.aBn {
+    border-bottom: 0 !important;
+    cursor: default !important;
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+.a6S {
+    display: none !important;
+    opacity: 0.01 !important;
+}
+
+/* What it does: Prevents Gmail from changing the text color in conversation threads. */
+.im {
+    color: inherit !important;
+}
+
+/* If the above doesn't work, add a .g-img class to any image in question. */
+img.g-img + div {
+    display: none !important;
+}
+
+/* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+/* Create one of these media queries for each additional viewport size you'd like to fix */
+
+
+    </style>
+
+    <!-- CSS Reset : END -->
+
+    <!-- Progressive Enhancements : BEGIN -->
+    <style>
+
+	    .primary{
+	background: #ff8b00;
+}
+.bg_white{
+	background: #ffffff;
+}
+.bg_light{
+	background: #fafafa;
+}
+.bg_black{
+	background: #000000;
+}
+.bg_dark{
+	background: rgba(0,0,0,.8);
+}
+.email-section{
+	padding:2.5em;
+}
+
+/*BUTTON*/
+.btn{
+	padding: 5px 20px;
+	display: inline-block;
+}
+.btn.btn-primary{
+	border-radius: 5px;
+	background: #ff8b00;
+	color: #ffffff;
+}
+.btn.btn-white{
+	border-radius: 5px;
+	background: #ffffff;
+	color: #000000;
+}
+.btn.btn-white-outline{
+	border-radius: 5px;
+	background: transparent;
+	border: 1px solid #fff;
+	color: #fff;
+}
+.btn.btn-black{
+	border-radius: 0px;
+	background: #000;
+	color: #fff;
+}
+.btn.btn-black-outline{
+	border-radius: 0px;
+	background: transparent;
+	border: 2px solid #000;
+	color: #000;
+	font-weight: 700;
+}
+.btn.btn-custom{
+	text-transform: uppercase;
+	font-weight: 600;
+	font-size: 12px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Work Sans', sans-serif;
+	color: #000000;
+	margin-top: 0;
+	font-weight: 400;
+}
+
+body{
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.8;
+	color: rgba(0,0,0,.5);
+}
+
+a{
+	color: #ff8b00;
+}
+
+p{
+	margin-top: 0;
+}
+
+table{
+}
+/*LOGO*/
+
+.logo h1{
+	margin: 0;
+}
+.logo h1 a{
+	color: #1a87cf;
+	font-size: 20px;
+	font-weight: 700;
+	/*text-transform: uppercase;*/
+	font-family: 'Work Sans', sans-serif;
+}
+
+.navigation{
+	padding: 0;
+	padding: 1em 0;
+	/*background: rgba(0,0,0,1);*/
+	border-top: 1px solid rgba(0,0,0,.05);
+	border-bottom: 1px solid rgba(0,0,0,.05);
+	margin-bottom: 0;
+}
+.navigation li{
+	list-style: none;
+	display: inline-block;;
+	margin-left: 5px;
+	margin-right: 5px;
+	font-size: 14px;
+	font-weight: 500;
+}
+.navigation li a{
+	color: rgba(0,0,0,1);
+}
+
+/*HERO*/
+.hero{
+	position: relative;
+	z-index: 0;
+}
+.hero .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .2;
+}
+.hero .text{
+	color: rgba(255,255,255,.9);
+	max-width: 80%;
+	margin: 0 auto 0;
+}
+.hero .text h2{
+	color: #fff;
+	font-size: 34px;
+	margin-bottom: 0;
+	font-weight: 400;
+	line-height: 1.4;
+}
+.hero .text h2 span{
+	font-weight: 600;
+	color: #ff8b00;
+}
+
+/*INTRO*/
+.intro{
+	position: relative;
+	z-index: 0;
+}
+
+.intro .text{
+	color: rgba(0,0,0,.3);
+}
+.intro .text h2{
+	color: #000;
+	font-size: 34px;
+	margin-bottom: 0;
+	font-weight: 300;
+}
+.intro .text h2 span{
+	font-weight: 600;
+	color: #ff8b00;
+}
+
+/*SERVICES*/
+.services{
+}
+.text-services{
+	padding: 10px 10px 0; 
+	text-align: center;
+}
+.text-services h3{
+	font-size: 18px;
+	font-weight: 400;
+}
+.text-services p{
+	font-size: 13px;
+}
+
+.services-list{
+	margin: 0 0 20px 0;
+	width: 100%;
+}
+
+.services-list img{
+	float: left;
+}
+.services-list h3{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.services-list p{
+	margin: 0;
+}
+
+
+
+/*COUNTER*/
+.counter{
+	width: 100%;
+	position: relative;
+	z-index: 0;
+}
+.counter .overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	content: '';
+	width: 100%;
+	background: #000000;
+	z-index: -1;
+	opacity: .3;
+}
+.counter-text{
+	text-align: center;
+}
+.counter-text .num{
+	display: block;
+	color: #ffffff;
+	font-size: 34px;
+	font-weight: 700;
+}
+.counter-text .name{
+	display: block;
+	color: rgba(255,255,255,.9);
+	font-size: 13px;
+}
+
+/*TOPIC*/
+.topic{
+	width: 100%;
+	display: block;
+	float: left;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding: 1.5em 0;
+}
+.topic .img{
+	width: 120px;
+	float: left;
+}
+.topic .text{
+	width: calc(100% - 150px);
+	padding-left: 20px;
+	float: left;
+}
+.topic .text h3{
+	font-size: 20px;
+	margin-bottom: 15px;
+	line-height: 1.2;
+}
+.topic .text .meta{
+	margin-bottom: 10px;
+}
+
+/*HEADING SECTION*/
+.heading-section{
+}
+.heading-section h2{
+	color: #000000;
+	font-size: 28px;
+	margin-top: 0;
+	line-height: 1.4;
+	font-weight: 400;
+}
+.heading-section .subheading{
+	margin-bottom: 20px !important;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(0,0,0,.4);
+	position: relative;
+}
+.heading-section .subheading::after{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: #ff8b00;
+	margin: 0 auto;
+}
+
+.heading-section-white{
+	color: rgba(255,255,255,.8);
+}
+.heading-section-white h2{
+	line-height: 1;
+	padding-bottom: 0;
+}
+.heading-section-white h2{
+	color: #ffffff;
+}
+.heading-section-white .subheading{
+	margin-bottom: 0;
+	display: inline-block;
+	font-size: 13px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: rgba(255,255,255,.4);
+}
+
+
+ul.social{
+	padding: 0;
+}
+ul.social li{
+	display: inline-block;
+	margin-right: 10px;
+	/*border: 1px solid #ff8b00;*/
+	padding: 10px;
+	border-radius: 50%;
+	background: rgba(0,0,0,.05);
+}
+
+/*FOOTER*/
+
+.footer{
+	border-top: 1px solid rgba(0,0,0,.05);
+	color: rgba(0,0,0,.5);
+}
+.footer .heading{
+	color: #000;
+	font-size: 20px;
+}
+.footer ul{
+	margin: 0;
+	padding: 0;
+}
+.footer ul li{
+	list-style: none;
+	margin-bottom: 0px;
+}
+.footer ul li a{
+	color: rgba(46, 46, 46, 0.603);
+
+}
+.footer p,li{
+	font-size: 14px;
+}
+
+
+
+    </style>
+
+
+</head>
+
+<body width="100%" style="margin: 0; padding: 0 !important; 	mso-line-height-rule: exactly; background-color: #fafafa;">
+	<center style="width: 100%; background-color: #ffffff;">
+    
+    <div style="max-width:850px; margin: 0 auto;" class="email-container">
+    	<!-- BEGIN BODY -->
+      <table valign="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: 0 auto;">
+      	<tr style="border: 1px solid #aaa7a7;">
+          <td valign="top" class="" style="padding: .5em 2.5em 1em 2.5em;">
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td width="40%" class="logo" style="text-align: left; " >
+					  <a href="https://techcryptors.services/">
+						  <img
+						   src="https://www.techcryptors.com/wp-content/uploads/2023/04/cropped-png-logo-160x93-1.png" 
+						   alt=""  title="TECH CRYPTORS" height="px" width="100px"></a>
+					</td>
+					<td width="25%" class="logo" style="text-align: right;">
+					  <table  style="border: none; width:auto; ">
+						<tr>
+							<td>
+								<a href="https://techcryptors.com/">
+									<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/weblogo.png" alt="" width="18px" height="18px">
+								</a>
+
+							</td>
+							<td>
+								<a href="https://api.whatsapp.com/send/?phone=917900172288&text&type=phone_number&app_absent=0"
+									>
+								   <img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/wa-logo.png" alt="" style="padding-left: 5px;">
+								</a>
+
+							</td>
+
+							<td>
+								<a href="https://www.instagram.com/techcryptors/"
+									>
+									<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/insta.png" alt="">
+								</a>
+
+							</td>
+
+							<td>
+								<a href="https://www.facebook.com/TechCryptors/"
+									>
+									<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/facebook.png" alt="">
+								</a>
+
+							</td>
+
+							<td>
+								<a href="https://in.linkedin.com/company/tech-cryptors"
+									>
+									<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/linkedin-logo.png" alt="">
+								</a>
+
+							</td>
+							<td>
+								<a href="https://x.com/techcryptors"
+								   >
+								 <img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/twitter-logo.png" alt="">
+								</a>
+
+							</td>
+							<td>
+								<a href="https://www.youtube.com/channel/UCam7cscqE1raC09JTYz-zbg"
+									>
+									<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/yt-logo.png" alt="">
+								</a>
+
+							</td>
+							<td>
+								<a href="https://www.google.com/search?q=tech+cryptors+reviews&rlz=1C1ONGR_enIN1058IN1058&oq=techcryptors+reviews&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgNGIAEMg0IAhAAGIYDGIAEGIoFMg0IAxAAGIYDGIAEGIoFMg0IBBAAGIYDGIAEGIoFMgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEINjg2MmowajSoAgCwAgE&sourceid=chrome&ie=UTF-8#ip=1&lrd=0x3be7b0e690555555:0x5be7a1480ca87d76,3,,,,"
+									>
+									<img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/google-logo.png" alt="">
+								</a>
+
+							</td>
+						</tr>
+						<tr>
+							<td class="padding threes" colspan="8">
+								<a href="tel:7900172288"
+								 >
+								  <img src="https://www.techcryptors.services/wp-content/uploads/emailer/01/phone-no-1.png" alt="" width="220px">
+								</a>
+							</td>
+						</tr>
+						</table>
+					</td>
+					</tr>
+          	</table>
+			
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+          <td valign="middle" class="hero bg_white" style="background-image: url(https://www.techcryptors.com/wp-content/uploads/2022/12/s3.jpg); background-size: cover; height: 400px;">
+          	<div class="overlay"></div>
+            <table>
+            	<tr>
+            		<td>
+            			<div class="text" style="padding: 0 4em; text-align: center;">
+            				<h2>Career Enhancement</h2>
+							<p>Your growth is not about your years of experience, it’s about your Skills, Knowledge and your logical thinking about the task kept in front of you.</p>
+            				<p><a href="https://www.techcryptors.com/career-enhancement/" class="btn btn-primary">Join Us</a></p>
+            			</div>
+            		</td>
+            	</tr>
+            </table>
+          </td>
+	      </tr><!-- end tr -->
+	      <tr>
+          <td class="bg_dark email-section" style="text-align:center;">
+          	<div class="heading-section heading-section-white">
+          		<span class="subheading">IT Services & Training Services</span>
+            	<h2>About Us</h2>
+            	<p>Tech Cryptors is a leading IT Services & Training Services company that focuses more on customer satisfaction and value for money for our clients.
+					In our both Sectors, we have a Client base all Over India, the USA, UK for our services in various types of technologies.
+					</p>
+          	</div>
+          </td>
+        </tr><!-- end: tr -->
+	      <tr>
+          <td class="bg_light email-section ;max-width=800px;">
+          	<div class="heading-section" style="text-align: center; padding: 0 0px;">
+            	<h2 style="margin-bottom: 2px;">OUR TRAINING COURSES</h2>
+            	<p>We offer industry-focused diploma courses, advanced data analytics for valuable insights, high-performance website development, and efficient database management for secure and organized data handling. </p>
+          	</div>
+          	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+          		<tr>
+          			<td valign="top" width="50%" style="padding-top: 20px;" class="services">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="icon">
+                        <img src="https://img.icons8.com/?size=100&id=rIpnrKav5QKD&format=png&color=000000" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-services">
+                      	<h3>Data Analytics</h3>
+                       	<p style="text-align: justify;">Data Analytics requires mastering multiple tools and languages. This course covers key areas, including Alteryx Designer, Tableau, Power BI, SAS, Advanced Excel, MySQL, Python, and R, providing comprehensive training for a strong foundation.</p>
+                       	<p><a href="https://www.techcryptors.com/dataanalytics/" class="btn btn-custom">Read more</a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="50%" style="padding-top: 20px;" class="services">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td class="icon">
+                        <img src="https://img.icons8.com/?size=100&id=u3dso4ycDcjV&format=png&color=000000" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+                      </td>
+                    </tr>
+                    <tr>
+                      <td class="text-services">
+                      	<h3>Website Development</h3>
+                       	<p style="text-align: justify;">Website Development involves mastering various tools and languages. This course covers essential technologies, including HTML, CSS, Bootstrap, JavaScript, PHP, Django, and full-stack frameworks like MERN, MEAN, and .NET.</p>
+                       	<p><a href="https://www.techcryptors.com/website-development-courses/" class="btn btn-custom">Read more</a></p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+				<td valign="top" width="50%" style="padding-top: 20px;" class="services">
+					<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+					  <tr>
+						<td class="icon">
+						  <img src="https://img.icons8.com/?size=100&id=d1tfxendFxJe&format=png&color=000000" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+						</td>
+					  </tr>
+					  <tr>
+						<td class="text-services">
+							<h3>Database Management</h3>
+							 <p style="text-align: justify;">Database Management focuses on organizing, storing, and securing data efficiently. This course covers MySQL, MS SQL Server, MongoDB, and MS Access, ensuring a strong foundation in database design and management.</p>
+							 <p><a href="https://www.techcryptors.com/database-management/" class="btn btn-custom">Read more</a></p>
+						</td>
+					  </tr>
+					</table>
+				  </td>
+              </tr>
+			</table>
+			<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+				<tr>
+					<td valign="top" width="50%" style="padding-top: 20px;" class="services">
+				<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+				  <tr>
+					<td class="icon">
+					  <img src="https://img.icons8.com/?size=100&id=2586&format=png&color=000000" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+					</td>
+				  </tr>
+				  <tr>
+					<td class="text-services">
+						<h3>Android App Development Course</h3>
+						 <p style="text-align: justify;">Learn the fundamentals of Android app development using Eclipse IDE. This course covers UI design, activity lifecycle, database integration, and app deployment, equipping you with the skills to build functional Android applications. Ideal for beginners and developers exploring Eclipse-based Android development.</p>
+						
+						 <p><a href="https://www.techcryptors.com/android-app-development-eclipse/" class="btn btn-custom">Read more</a></p>
+					</td>
+				  </tr>
+				</table>
+			  </td>
+			  <td valign="top" width="50%" style="padding-top: 20px;" class="services">
+				<table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+				  <tr>
+					<td class="icon">
+					  <img src="https://img.icons8.com/?size=100&id=61864&format=png&color=000000" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+					</td>
+				  </tr>
+				  <tr>
+					<td class="text-services">
+						<h3 style="margin-bottom: 50px;">AI & ML Course</h3>
+						 <p style="text-align: justify; margin-bottom:35px;">
+							Gain hands-on experience in machine learning, deep learning, and AI algorithms with this comprehensive training. Learn to build AI models, work with neural networks, and apply AI techniques to real-world problems. Ideal for beginners and professionals looking to enhance their AI expertise.</p>
+						 
+						 <p><a href="https://www.techcryptors.com/artificial-intelligence-training-course/" class="btn btn-custom">Read more</a></p>
+					</td>
+				  </tr>
+				</table>
+			  </td>
+			  <td valign="top" width="50%" style="padding-top: 20px;" class="services">
+				  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+					<tr>
+					  <td class="icon">
+						<img src="https://img.icons8.com/?size=100&id=Ey5lI6tUH0UT&format=png&color=000000" alt="" style="width: 50px; max-width: 600px; height: auto; margin: auto; display: block;">
+					  </td>
+					</tr>
+					<tr>
+					  <td class="text-services">
+						  <h3>Robotics Training Course</h3>
+						   <p style="text-align: justify;">Tech Cryptor’s Robotics course is your gateway to exploring the exciting realm of intelligent machines and cutting-edge automation.From mastering concepts of kinematics and control systems to delving into machine learning and computer vision, you’ll acquire the skills to create intelligent robotic systems.
+							 
+							 </p>
+						   <p><a href="https://www.techcryptors.com/robotics-training-course/" class="btn btn-custom">Read more</a></p>
+					  </td>
+					</tr>
+				  </table>
+				</td>
+			</tr>
+		  </table>
+	      <tr>
+          <td class="bg_white email-section">
+          	<div class="heading-section" style="text-align: center; padding: 0 10px;">
+            	<p style="text-align: justify;">TECH CRYPTORS is an ISO 9001:2015 CERTIFIED COMPANY Leading in the field of IT SERVICES & TECHNICAL TRAINING by Serving different entities & Institutes including IITs and NITs. TECH CRYPTORS started with the intent of providing quality Training to Students, Engineers, PHD holders, Faculties, Professionals & bringing a new era of quality services in IT-IOT Sector All Over India & the Globe. We have Trained around 50,000 + Students, Faculties, Professionals in Colleges, Schools, Offices All Over India & Globe including IITs & NITs along with completing 250+ professional projects.</p>
+          	</div>
+          	<table role="presentation" border="0" cellpadding="10" cellspacing="0" width="100%">
+          		
+          	</table>
+          </td>
+        </tr><!-- end: tr -->
+				<tr>
+	        <td class="bg_white email-section" style="width: 100%;">
+				<h1 style="text-align: center;">Why Choose Us?</h1>
+	        	<table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+	        		<tr>
+	        			<td valign="middle" width="50%">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                  <tr>
+	                    <td class="text-services" style="text-align: left; padding-right:25px;">
+					            	<div class="services-list">
+					            		<div class="text">
+					            			<h3>Feedback</h3>
+					            			<p>You can check feedback about our services anywhere or ask any of our clients about the same which you will always find positive.</p>
+					            		</div>
+					            	</div>
+					            	<div class="services-list">
+					            		<div class="text">
+					            			<h3>Quality</h3>
+					            			<p>Quality of our service & knowledge is up to date which gives our clients liberty to choose the technology they are comfortable with.</p>
+					            		</div>
+					            	</div>
+					            	<div class="services-list">
+					            		<div class="text">
+					            			<h3>Punctuality</h3>
+					            			<p>We deliver proposed services before the deadline promised by us with all functionalities discussed while starting the project.</p>
+					            		</div>
+					            	</div>
+	                    </td>
+	                  </tr>
+	                </table>
+	              </td>
+	        			<td valign="middle" width="50%">
+	                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+	                  <tr>
+	                    <td>
+	                      <img src="https://www.techcryptors.com/wp-content/uploads/2021/03/banner.jpg" alt="" style="width: 100%; max-width: 600px; height: auto; margin: auto; display: block;">
+	                    </td>
+	                  </tr>
+	                </table>
+	              </td>
+	            </tr>
+	        	</table>
+	        </td>
+	      </tr><!-- end: tr -->
+      <!-- 1 Column Text + Button : END -->
+	  
+      <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
+      	<tr>
+          <td valign="middle" class="bg_light footer email-section">
+            <table>
+            	<tr>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-right: 10px;">
+                      	<h3 class="heading">Office
+						</h3>
+                      	<p style="margin-top: 22px;">F16, Sai Kripa Mall, L.T. Road,
+							Dahisar Railway Station West,
+							Mumbai, Maharashtra 400 068.</p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-left: 5px; padding-right: 5px;">
+                      	<h3 class="heading">Contact Info</h3>
+                      	<ul>
+							<li><a href="mailto:sales@techcryptors.com" class="text">sales@techcryptors.com</a></li>
+							<li><a href="mailto:techcryptors@gmail.com" class="text">techcryptors@gmail.com</a></li>
+							<li><a href="tel:+917900172288" class="text">+91 790-017-2288</a></li>
+							<li><a href="tel:+919321142842" class="text">+91 932-114-2842</a></li>
+
+
+					              </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+                <td valign="top" width="33.333%" style="padding-top: 20px;">
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                    <tr>
+                      <td style="text-align: left; padding-left: 10px;">
+                      	<h3 class="heading">Useful Links</h3>
+                      	<ul>
+					                <li><a href="https://www.techcryptors.services/">IT-IoT Services</a></li>
+					                <li><a href="https://techcryptors.com/certified-courses/">Certified Courses</a></li>
+					                <li><a href="https://techcryptors.com/workshops-webinars/">Workshops & Webinars</a></li>
+					                <li><a href="https://techcryptors.com/refund-and-cancellation-policy/">Refund & Cancellation</a></li>
+					              </ul>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr><!-- end: tr -->
+        
+      </table>
+</td>
+</tr>
+</table>
+</div>
+  </center>
+</body>
+</html>

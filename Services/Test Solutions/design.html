@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Cryptors – Testing Solutions</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      min-height: 100vh;
+    }
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      background: #ffffff;
+      border-radius: 1rem;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+    .hero {
+      background: #2d6a4f;
+      color: #ffffff;
+      padding: 4rem 2rem;
+      text-align: center;
+    }
+    .hero-image {
+      border-radius: 1rem;
+      overflow: hidden;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      max-width: 100%;
+      margin: 2rem auto;
+    }
+    .highlight {
+      color: #facc15;
+    }
+    .btn {
+      background: #facc15;
+      color: #2d6a4f;
+      transition: background 0.3s ease, transform 0.2s ease;
+      border-radius: 9999px;
+      padding: 1rem 2.5rem;
+      font-weight: 600;
+    }
+    .btn:hover {
+      background: #e9b700;
+      transform: scale(1.05);
+    }
+    .service-card {
+      background: #ffffff;
+      border: 1px solid #e5e7eb;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      text-align: left;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+    .learn-more-btn {
+      background: #2d6a4f;
+      color: #ffffff;
+      border-radius: 9999px;
+      padding: 0.75rem 1.5rem;
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+    .learn-more-btn:hover {
+      background: #1e4a46;
+    }
+    .icon {
+      width: 24px;
+      height: 24px;
+      margin-right: 0.5rem;
+    }
+    h1, h2, h3 {
+      font-family: 'Poppins', sans-serif;
+    }
+    p, ul, li {
+      font-family: 'Nunito Sans', sans-serif;
+    }
+    .table-content {
+      font-family: 'Inter', sans-serif;
+    }
+    .section {
+      padding: 3rem 2rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <table class="w-full table-content">
+      <tr>
+        <td colspan="2" class="hero">
+          <h1 class="text-4xl md:text-6xl font-bold mb-4">Secure Your <span class="highlight">Software</span> with Confidence</h1>
+          <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6">Start ensuring your future today with tailored testing strategies that grow with you. From QA to performance, we make the path to quality clear and simple.</p>
+          <img src="https://images.unsplash.com/photo-1516321310762-479e93c4e359?auto=format&fit=crop&w=1200&q=80" alt="Team Meeting" class="hero-image w-full md:w-3/4 lg:w-1/2">
+          <a href="https://www.techcryptors.services/testing-solutions/" class="btn mt-6 inline-block">Start Testing Today</a>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="section bg-gray-50">
+          <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Our Testing Services</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/checklist.png" alt="Functional Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Functional Testing</h3>
+                  <p class="text-sm text-gray-600">Ensures every feature performs as intended</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Validates feature functionality</li>
+                <li>Ensures user requirements are met</li>
+                <li>Comprehensive test coverage</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/automation.png" alt="Automation Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Automation Testing</h3>
+                  <p class="text-sm text-gray-600">Streamlines testing with advanced frameworks</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Reduces manual effort</li>
+                <li>Accelerates test cycles</li>
+                <li>Improves accuracy</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/speed.png" alt="Performance Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Performance Testing</h3>
+                  <p class="text-sm text-gray-600">Optimizes speed and responsiveness</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Measures system efficiency</li>
+                <li>Identifies bottlenecks</li>
+                <li>Enhances user experience</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/load.png" alt="Load Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Load Testing</h3>
+                  <p class="text-sm text-gray-600">Simulates heavy user traffic for stability</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Tests under peak loads</li>
+                <li>Ensures system stability</li>
+                <li>Prevents downtime</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/stress.png" alt="Stress Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Stress Testing</h3>
+                  <p class="text-sm text-gray-600">Pushes systems to their limits</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Identifies breaking points</li>
+                <li>Ensures resilience</li>
+                <li>Validates recovery</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/refresh.png" alt="Regression Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Regression Testing</h3>
+                  <p class="text-sm text-gray-600">Verifies updates don’t disrupt functionality</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Checks existing features</li>
+                <li>Supports new updates</li>
+                <li>Maintains stability</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/shield.png" alt="Security Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Security Testing</h3>
+                  <p class="text-sm text-gray-600">Fortifies against vulnerabilities</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Detects security flaws</li>
+                <li>Enhances protection</li>
+                <li>Meets compliance</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/hack.png" alt="Penetration Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Penetration Testing</h3>
+                  <p class="text-sm text-gray-600">Simulates real-world cyber attacks</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Identifies weaknesses</li>
+                <li>Improves defenses</li>
+                <li>Ensures readiness</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/mobile.png" alt="Mobile App Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Mobile App Testing</h3>
+                  <p class="text-sm text-gray-600">Ensures quality across devices and OS</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Cross-device compatibility</li>
+                <li>OS-specific testing</li>
+                <li>Network resilience</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/api.png" alt="API Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">API Testing</h3>
+                  <p class="text-sm text-gray-600">Guarantees backend reliability</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Validates API endpoints</li>
+                <li>Ensures data integrity</li>
+                <li>Supports integration</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/usability.png" alt="Usability Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Usability Testing</h3>
+                  <p class="text-sm text-gray-600">Enhances user experience with feedback</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Improves interface design</li>
+                <li>Gathers user feedback</li>
+                <li>Boosts satisfaction</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/compatibility.png" alt="Compatibility Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Compatibility Testing</h3>
+                  <p class="text-sm text-gray-600">Validates across browsers and platforms</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Cross-browser support</li>
+                <li>Platform consistency</li>
+                <li>Device adaptability</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/language.png" alt="Localization Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Localization Testing</h3>
+                  <p class="text-sm text-gray-600">Ensures cultural and regional accuracy</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Language validation</li>
+                <li>Regional compliance</li>
+                <li>Cultural relevance</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/accessibility.png" alt="Accessibility Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Accessibility Testing</h3>
+                  <p class="text-sm text-gray-600">Makes software inclusive for all users</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Supports diverse needs</li>
+                <li>Meets accessibility standards</li>
+                <li>Enhances usability</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/data-migration.png" alt="Data Migration Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">Data Migration Testing</h3>
+                  <p class="text-sm text-gray-600">Ensures data integrity during transitions</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Validates data transfer</li>
+                <li>Ensures accuracy</li>
+                <li>Minimizes risks</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+            <div class="service-card">
+              <div class="flex items-start mb-4">
+                <img src="https://img.icons8.com/ios-filled/24/2d6a4f/api-integration.png" alt="API Integration Testing Icon" class="icon">
+                <div>
+                  <h3 class="text-lg font-medium text-gray-800">API Integration Testing</h3>
+                  <p class="text-sm text-gray-600">Tests seamless service workflows</p>
+                </div>
+              </div>
+              <ul class="text-sm text-gray-600 list-disc pl-5 mb-4">
+                <li>Ensures end-to-end flow</li>
+                <li>Validates integration</li>
+                <li>Improves reliability</li>
+              </ul>
+              <a href="#" class="learn-more-btn block w-full text-center">Learn More</a>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="section bg-gray-100">
+          <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Why Choose Tech Cryptors?</h2>
+          <ul class="list-none pl-6 text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto">
+            <li class="mb-4 flex items-start"><svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Expert QA engineers with deep domain knowledge</li>
+            <li class="mb-4 flex items-start"><svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Cost-effective automation for faster release cycles</li>
+            <li class="mb-4 flex items-start"><svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Tailored test plans to meet your unique needs</li>
+            <li class="mb-4 flex items-start"><svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Seamless DevOps pipeline integration</li>
+            <li class="mb-4 flex items-start"><svg class="w-6 h-6 text-blue-600 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Insightful reporting with actionable analytics</li>
+          </ul>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="section bg-gray-50">
+          <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Our Testing Process</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div class="process-step p-6 text-center">
+              <img src="https://img.icons8.com/ios-filled/40/2d6a4f/planning.png" alt="Planning Icon" class="icon mx-auto">
+              <h3 class="text-lg font-medium text-gray-800">Planning & Strategy</h3>
+              <p class="text-gray-600">We analyze your requirements and design a customized testing strategy.</p>
+            </div>
+            <div class="process-step p-6 text-center">
+              <img src="https://img.icons8.com/ios-filled/40/2d6a4f/execution.png" alt="Execution Icon" class="icon mx-auto">
+              <h3 class="text-lg font-medium text-gray-800">Execution & Testing</h3>
+              <p class="text-gray-600">Our team executes tests using advanced tools and methodologies.</p>
+            </div>
+            <div class="process-step p-6 text-center">
+              <img src="https://img.icons8.com/ios-filled/40/2d6a4f/report.png" alt="Reporting Icon" class="icon mx-auto">
+              <h3 class="text-lg font-medium text-gray-800">Reporting & Optimization</h3>
+              <p class="text-gray-600">Detailed reports guide improvements for optimal performance.</p>
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="section">
+          <h2 class="text-3xl font-semibold text-gray-800 text-center mb-8">Our Commitment to Quality</h2>
+          <div class="max-w-3xl mx-auto text-center">
+            <p class="text-gray-600 text-lg mb-6">At Tech Cryptors, we are dedicated to delivering software that exceeds expectations. Our rigorous testing ensures reliability, security, and performance, empowering your business to thrive in a competitive digital landscape.</p>
+            <img src="https://images.unsplash.com/photo-1516321310762-479e93c4e359?auto=format&fit=crop&w=600&q=80" alt="Quality Assurance" class="mx-auto rounded-2xl shadow-lg">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" class="text-center py-8 bg-gray-800 text-gray-300">
+          © 2025 Tech Cryptors IT Solutions Pvt. Ltd.<br>
+          Mumbai, India | <a href="https://www.techcryptors.services" class="text-gray-300 hover:text-white underline">techcryptors.services</a><br>
+          <a href="#" class="text-gray-300 hover:text-white underline">Unsubscribe</a>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
